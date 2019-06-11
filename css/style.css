@@ -79,6 +79,13 @@ body{
   width: 100%;
   font-weight: 400;
 }
+.form form ul li select{
+  text-align: center;
+  width: 72%;
+  margin:10px 30px 10px 0px;
+  padding:5px;
+  border-radius: 5px;
+}
 .form form ul li input{
   border-radius: 5px;
   text-align: center;
@@ -153,6 +160,17 @@ a{
   text-align: center;
   background-color: #0B2854;
 }
+.flex-container .pl {
+  width: 30%;
+  text-align: center;
+  background-color: #0B2854;
+}
+.flex-container .pr {
+  width: 65%;
+  text-align: center;
+  background-color: #0B2854;
+}
+
 @media only screen and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
