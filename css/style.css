@@ -24,11 +24,16 @@ body{
 }
 .header-right ul li{
   display: inline-block;
-  background-color: #101B2B;
+  border-radius: 5px;
   padding:5px;
   margin:5px;
-  border-radius: 5px;
   color: #BEC3CB;
+  background-color: #0B2854;
+
+}
+.header-right ul li:hover{
+  background-color: #BEC3CB;
+  color: #0B2854;
 }
 .container{
   display: flex;
@@ -86,4 +91,47 @@ body{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+.dropbtn {
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #BEC3CB;
+  min-width: 160px;
+  z-index: 1;
+  left:-50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: #0B2854;
+  margin:20px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #0B2854;
+  color:#BEC3CB;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #BEC3CB;
+  color: #0B2854;
 }
