@@ -4,6 +4,7 @@ body{
   color: #0B2854;
 }
 .header{
+  z-index: 1;
   color:#BEC3CB;
   height: 60px;
   margin: 0px;
@@ -46,12 +47,12 @@ body{
 .container-right{
   position: relative;
   float: right;
-  width: 65%;
+  width: 45%;
 }
 .container-left{
   position: relative;
   float: left;
-  width: 35%;
+  width: 55%;
 }
 .mySlides{
   height: 300px;
@@ -134,4 +135,22 @@ a{
 .dropdown:hover .dropbtn {
   background-color: #BEC3CB;
   color: #0B2854;
+}
+
+.flex-container {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  min-height: 200px;
+  min-width: 200px;
+  flex:2;
+  margin: 10px;
+  text-align: center;
+  background-color: #0B2854;
 }
