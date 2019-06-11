@@ -140,7 +140,6 @@ a{
 .flex-container {
   justify-content: center;
   width: 100%;
-  min-width: 500px;
   height: auto;
   position: relative;
   display: flex;
