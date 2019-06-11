@@ -4,6 +4,7 @@ body{
   color: #0B2854;
 }
 .header{
+  z-index: 1;
   color:#BEC3CB;
   height: 60px;
   margin: 0px;
@@ -46,12 +47,12 @@ body{
 .container-right{
   position: relative;
   float: right;
-  width: 65%;
+  width: 45%;
 }
 .container-left{
   position: relative;
   float: left;
-  width: 35%;
+  width: 55%;
 }
 .mySlides{
   height: 300px;
@@ -134,4 +135,38 @@ a{
 .dropdown:hover .dropbtn {
   background-color: #BEC3CB;
   color: #0B2854;
+}
+
+.flex-container {
+  justify-content: center;
+  width: 100%;
+  min-width: 500px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  min-height: 200px;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+  background-color: #0B2854;
+}
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+
+  .container{
+      flex-direction: column;
+  }
+  .container-right{
+    width: 100%;
+  }
+  .container-left{
+    width: 100%;
+  }
 }
