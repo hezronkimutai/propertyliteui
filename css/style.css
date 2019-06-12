@@ -2,6 +2,7 @@ body{
   margin:0% 2% 0% 2%;
   background-color: #BEC3CB;
   color: #0B2854;
+  position: fixed;
 }
 .header{
   z-index: 1;
@@ -43,6 +44,7 @@ body{
   position: relative;
   width:99.7%;
   height:auto;
+  overflow-y: scroll;
 }
 .container-right{
   position: relative;
@@ -166,31 +168,45 @@ a{
 }
 
 .flex-container > div {
-  min-height: 200px;
-  min-width: 200px;
-  margin: 10px;
+height:inherit;
+  width: 200px;
+  height: auto;
   text-align: center;
+
 }
 .flex-container .pl {
   width: 30%;
   text-align: center;
-  background-color: #0B2854;
 }
 .flex-container .pr {
   width: 65%;
   text-align: center;
-  background-color: #0B2854;
 }
 .prop{
-  background-color: white;
+  box-shadow: 1px 3px;
+    padding:2.5px;
+    margin: 2.5px
+}
+.Prof{
+  width: 100%;
+  text-align: left;
+
+}
+.prof img{
+  width: 200px;
+  height: 200px;
 }
 .s-prop{
   margin: 0 auto;
   text-align: center;
 }
 .s-prop img{
-  max-width: 400px;
-  max-height: 400px;
+  width: 200px;
+  height: 200px;
+}
+.prop img{
+  width: 200px;
+  height: 150px;
 }
 
 @media only screen and (max-width: 600px) {
