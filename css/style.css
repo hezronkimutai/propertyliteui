@@ -184,6 +184,14 @@ a{
 .prop{
   background-color: white;
 }
+.s-prop{
+  margin: 0 auto;
+  text-align: center;
+}
+.s-prop img{
+  max-width: 400px;
+  max-height: 400px;
+}
 
 @media only screen and (max-width: 600px) {
   .flex-container {

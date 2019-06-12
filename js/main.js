@@ -13,3 +13,19 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 3000); // Change image every 2 seconds
 }
+
+
+function myMap() {
+  var myLatLng = new google.maps.LatLng(51.508742,-0.120850);
+
+var mapProp= {
+  center:myLatLng,
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({
+  position: myLatLng,
+  map: map,
+  title: 'Hello World!'
+});
+}
