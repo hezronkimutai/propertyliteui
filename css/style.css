@@ -3,6 +3,7 @@ body{
   background-color: #BEC3CB;
   color: #0B2854;
   position: fixed;
+  width: 96%;
 }
 .header{
   z-index: 1;
