@@ -219,7 +219,16 @@ a{
   width: 200px;
   height: 150px;
 }
+@media only screen and (max-width: 1020px) {
 
+  .form{
+    margin-left:10%;
+    width:80%;
+
+
+  }
+
+}
 @media only screen and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
@@ -234,12 +243,32 @@ a{
 
   }
   .form{
-    margin-left:0%;
-    width:100%;
-
-
+    margin:0% 3% 0% 3%;
+    width:89%;
   }
-
+  .form form{
+    padding:0px;
+    margin:0px 0px;
+  }
+  .form form{
+    width: 100%;
+    padding:0px;
+    margin:0px 0px;
+  }
+  .form form ul li{
+    width: 100%;
+    text-align: center;
+  }
+  .form form ul li input{
+    width: 90%;
+    margin:10px 1% 10px 0%;
+    padding:5px;
+  }
+  .form form ul li select{
+    width: 90%;
+      margin:10px 1% 10px 0%;
+    padding:5px;
+  }
   .container{
       flex-direction: column;
   }
