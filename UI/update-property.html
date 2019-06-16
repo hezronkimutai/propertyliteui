@@ -16,61 +16,75 @@
       <ul>
         <li>
           <div class="dropdown">
-            <div class="dropbtn">Dropdown</div>
+            <div class="dropbtn">Categories</div>
             <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Vehicles</a>
+            <a href="#">Electronics</a>
+            <a href="#">Clothing</a>
             </div>
           </div>
         </li>
-        <li><a href="post-property.html">Update a property</a></li>
+        <li><a href="post-property.html">Post a property</a></li>
         <li><a href="profile.html">Profile</a></li>
       </ul>
     </div>
   </div>
   <div class="container">
     <div class="form" >
-      <form>
-        <h2>Post Property</h2>
-        <ul>
-          <li>
-            <label for="category">Category</label>
-            <select name="category">
-              <option value="vehicles">Vehicles</option>
-              <option value="electronics">Electronics</option>
-              <option value="clothing">Clothing</option>
-            </select>
-          </li>
+<form>
 
-          <li>
-            <label for="name">name</label>
-            <input type="text"  name="name" placeholder="property name">
-          </li>
-          <li>
-            <label for="description">description</label>
-            <input type="text"  name="description" placeholder="Property description">
-          </li>
-          <li>
-            <label for="category">Status</label>
-            <select name="category">
-              <option value="vehicles">Sell</option>
-              <option value="electronics">Rent</option>
-            </select>
-          </li>
-          <li id="sold">
-<label for="sold">Sold?</label>
-            <input  type="radio" value="sold" name="sold">
-          </li>
-            <li id="sold">
-            <input type="file" name="fileToUpload" id="fileToUpload">
 
-          </li>
-          <li>
-            <input type="submit" value="Submit">
-          </li>
-        </ul>
-      </form>
+  <h2>Post Property</h2>
+  <ul>
+    <li>
+      <label for="category">Category</label>
+      <select name="category">
+        <option value="vehicles">Vehicles</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+    </li>
+
+    <li>
+      <label for="name">name</label>
+      <input type="text"  name="name" placeholder="property name">
+    </li>
+
+    <li>
+      <label for="category">Reason</label>
+      <select name="category">
+        <option value="sell">Sell</option>
+        <option value="rent">Rent</option>
+      </select>
+    </li>
+    <li>
+      <label for="price">price</label>
+      <input type="text"  name="price" placeholder="Price">
+    </li>
+    <li>
+      <label for="description">state</label>
+      <input type="text"  name="description" placeholder="Property description">
+    </li>
+    <li>
+      <label for="description">city</label>
+      <input type="text"  name="description" placeholder="Property description">
+    </li>
+    <li>
+      <label for="address">Address</label>
+      <input type="text"  name="address" placeholder="Address">
+    </li>
+    <li>
+      <label for="map">map points</label>
+      <input type="text"  name="map" placeholder="e.g 51.508742,-0.120850">
+    </li>
+    <li>
+      <textarea type="text"  name="description"> Property description</textarea>
+    </li>
+    <li>
+      <input type="submit" value="Submit">
+    </li>
+  </ul>
+</form>
 </div>
   </div>
   <div class="footer">
