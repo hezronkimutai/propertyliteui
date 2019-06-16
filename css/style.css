@@ -53,15 +53,21 @@ body{
   height:auto;
   overflow-y: scroll;
 }
+.container >div{
+  flex: 0 0 auto;
+  flex-shrink: 0;
+}
 .container-right{
   position: relative;
   float: right;
+  min-width: 500px;
   width: 45%;
 }
 .container-left{
   position: relative;
   float: left;
   width: 55%;
+  min-width: 500px;
 }
 .mySlides{
   height: 300px;
@@ -168,10 +174,10 @@ a{
   width: 100%;
   height: auto;
   position: relative;
-  /* display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  /* display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  /* display: -ms-flexbox;      /* TWEENER - IE 10 */
-  /* display: -webkit-flex;     /* NEW - Chrome */
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display:flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 flex-wrap: wrap;
 }
@@ -232,6 +238,12 @@ flex-wrap: wrap;
 
 }
 @media only screen and (max-width: 600px) {
+  .container-right{
+    width: 100%;
+  }
+  .container-left{
+    width: 100%;
+  }
 
   .flex-container {
     flex-direction: column;
