@@ -1,16 +1,15 @@
 body{
   background-color: #BEC3CB;
   color: #0B2854;
-  position: fixed;
   width: 100%;
   min-width: 800px !important;
 }
 .header{
-  margin: 0% 1% 0% 0%;
+  position: fixed;
+  margin: -9px 1% 0% 0%;
   z-index: 1;
   color:#BEC3CB;
-  height: 60px;
-  margin: 0px;
+  height: 80px;
   background-color: #0B2854;
   width: 99%;
   min-width: 300px !important;
@@ -41,6 +40,7 @@ body{
   color: #0B2854;
 }
 .container{
+  top: 80px;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -51,7 +51,6 @@ body{
   position: relative;
   width:99.7%;
   height:auto;
-  overflow-y: scroll;
 }
 .container >div{
   flex: 0 0 auto;
@@ -238,25 +237,7 @@ flex-wrap: wrap;
 
 }
 @media only screen and (max-width: 600px) {
-  .container-right{
-    width: 100%;
-  }
-  .container-left{
-    width: 100%;
-  }
 
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-container > div {
-    width: 100%;
-
-  }
-  .flex-container > div img{
-    width: 80%;
-    margin:0% 10% 0% 10%;
-
-  }
   .form{
     margin:0% 3% 0% 3%;
     width:89%;
@@ -284,13 +265,5 @@ flex-wrap: wrap;
       margin:10px 1% 10px 0%;
     padding:5px;
   }
-  .container{
-      flex-direction: column;
-  }
-  .container-right{
-    width: 100%;
-  }
-  .container-left{
-    width: 100%;
-  }
+
 }
