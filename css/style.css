@@ -3,7 +3,7 @@ body{
   color: #0B2854;
   position: fixed;
   width: 100%;
-  min-width: 300px !important;
+  min-width: 800px !important;
 }
 .header{
   margin: 0% 1% 0% 0%;
@@ -168,29 +168,31 @@ a{
   width: 100%;
   height: auto;
   position: relative;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-wrap: wrap;
-  flex: 0 0 auto;
-  flex-shrink: 0;
+  /* display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  /* display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  /* display: -ms-flexbox;      /* TWEENER - IE 10 */
+  /* display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+flex-wrap: wrap;
 }
 
 .flex-container > div {
   height:inherit;
-  width: 200px;
+  width: 300px;
   height: auto;
   text-align: center;
 
+  flex: 0 0 auto;
+  flex-shrink: 0;
+
 }
 .flex-container .pl {
-  width: 30%;
+  width: 300px;
   text-align: center;
 }
 .flex-container .pr {
   width: 65%;
+  min-width: 800px;
   text-align: center;
 }
 .prop{
@@ -204,20 +206,20 @@ a{
 
 }
 .prof img{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 .s-prop{
   margin: 0 auto;
   text-align: center;
 }
 .s-prop img{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 .prop img{
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
 }
 @media only screen and (max-width: 1020px) {
 
@@ -230,6 +232,7 @@ a{
 
 }
 @media only screen and (max-width: 600px) {
+
   .flex-container {
     flex-direction: column;
   }
