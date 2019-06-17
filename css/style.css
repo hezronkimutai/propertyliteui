@@ -233,11 +233,23 @@ a{
     margin-left:10%;
     width:80%;
   }
+  .container-left{
+    width: 100% !important;
+  }
+  .container-right{
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .form{
     margin:0% 3% 0% 3%;
     width:89%;
+  }
+  .container-left{
+    width: 100% !important;
+  }
+  .container-right{
+    width: 100%;
   }
   .form form{
     padding:0px;
