@@ -1,19 +1,17 @@
 body{
   background-color: #BEC3CB;
   color: #0B2854;
-  width: 100%;
-  min-width: 800px !important;
+
 }
 .header{
   position: fixed;
   margin: -9px 1% 0% 0%;
   z-index: 1;
   color:#BEC3CB;
-  height: 80px;
+  height: 90px;
   background-color: #0B2854;
   width: 99%;
-  min-width: 300px !important;
-  font-size: 20px;
+  font-size: 25px;
 }
 .header-left{
   position: relative;
@@ -30,22 +28,20 @@ body{
   display: inline-block;
   border-radius: 5px;
   padding:5px;
-  margin:5px;
   color: #BEC3CB;
   background-color: #0B2854;
-
 }
 .header-right ul li:hover{
   background-color: #BEC3CB;
   color: #0B2854;
 }
 .container{
-  top: 80px;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  top: 90px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0px;
   position: relative;
@@ -69,38 +65,31 @@ body{
   min-width: 500px;
 }
 .mySlides{
-  height: 300px;
+  height: 200px;
   width: 94%;
   padding:3%;
 }
 .form{
   margin-left:25%;
   width:50%;
-
-
 }
 .form form{
   display:inline-block;
   text-align: center;
-
-
   width: 100%;
   padding:10px;
   margin:30px 0px;
   color: #0B2854;
-
 }
 .form form ul{
   color: #BEC3CB;
-    border-radius: 5px;
-    background-color: #0B2854;
-
+  border-radius: 5px;
+  background-color: #0B2854;
 }
 .form form ul li{
   text-align: right;
   width: 100%;
   font-weight: 400;
-
 }
 .form form ul #sold{
   text-align: center;
@@ -141,28 +130,23 @@ a{
   text-decoration: none;
   color: inherit;
 }
-
 .dropbtn {
   cursor: pointer;
-
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #BEC3CB;
   min-width: 160px;
   z-index: 1;
-  left:-50px;
+  left:-30px;
   border-radius: 5px;
   text-align: center;
 }
-
 .dropdown-content a {
   color: #0B2854;
   margin:20px;
@@ -170,46 +154,39 @@ a{
   display: block;
   border-radius: 5px;
 }
-
 .dropdown-content a:hover {
   background-color: #0B2854;
   color:#BEC3CB;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .dropdown:hover .dropbtn {
   background-color: #BEC3CB;
   color: #0B2854;
 }
-
 .flex-container {
   justify-content: center;
   width: 100%;
   height: auto;
   position: relative;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-   display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display:flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  flex-wrap: wrap;
 }
-
 .flex-container > div {
   height:inherit;
-  width: 300px;
+  width: 200px;
   height: auto;
   text-align: center;
-
   flex: 0 0 auto;
   flex-shrink: 0;
-
 }
 .flex-container .pl {
-  width: 300px;
+  width: 200px;
   text-align: center;
 }
 .flex-container .pr {
@@ -219,42 +196,45 @@ flex-wrap: wrap;
 }
 .prop{
   box-shadow: 1px 3px;
-    padding:2.5px;
-    margin: 2.5px
+  padding:2.5px;
+  margin: 2.5px
 }
 .Prof{
   width: 100%;
-  text-align: left;
-
+  text-align: center;
+}
+.userInfo ul{
+  margin-left: -50px;
+  border-radius: 10px;
+}
+.userInfo ul:hover{
+  background-color: #0B2854;
+  color:#BEC3CB;
 }
 .prof img{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .s-prop{
   margin: 0 auto;
   text-align: center;
 }
 .s-prop img{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 .prop img{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 @media only screen and (max-width: 1020px) {
-
   .form{
     margin-left:10%;
     width:80%;
-
-
   }
-
 }
 @media only screen and (max-width: 600px) {
-
   .form{
     margin:0% 3% 0% 3%;
     width:89%;
@@ -282,5 +262,4 @@ flex-wrap: wrap;
       margin:10px 1% 10px 0%;
     padding:5px;
   }
-
 }
