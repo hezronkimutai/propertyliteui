@@ -281,7 +281,7 @@ a{
   .header{
     height: 100px;
   }
-  .header-right{font-size: 30px}
+  .header-right{font-size: 25px}
   .form{
     margin-left:0%;
     width:100%;
@@ -307,9 +307,8 @@ a{
   .container{
     top:100px;
   }
-  .container{
-    top:100px;
-  }
+  .header-right{font-size: 25px}
+
   .container-left{
     width: 100% !important;
   }
