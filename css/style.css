@@ -281,6 +281,10 @@ a{
   .header{
     height: 100px;
   }
+  .header-left h2{
+    font-size: 35px;
+    
+  }
   .header-right{font-size: 25px}
   .form{
     margin-left:0%;
@@ -303,6 +307,9 @@ a{
   .form{
     margin:0% 0% 0% 0%;
     width:100%;
+  }
+  .header-left h2{
+    font-size: 35px;
   }
   .container{
     top:100px;
