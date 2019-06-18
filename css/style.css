@@ -41,10 +41,63 @@ font-size: 20px;
  ul{
   list-style: none;
 }
+
+
+
+
+.border{
+		background: linear-gradient(150deg, #4C0108  27%, rgba(0, 0, 0, 0) 28%), linear-gradient(150deg, #C5E7D7 41%, #0B2854  42%);
+
+	background-size: 400% 400%;
+  border-radius: 5px;
+	height: auto;
+	background-position: 25% 50%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+}
+.inner-cutout{
+	display: block;
+	height: auto;
+}
+.knockout {
+
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size:30px;
+	color:#4C0108;
+		background: linear-gradient(150deg, #0B2854 33%, rgba(0, 0, 0, 0) 34%), linear-gradient(150deg, rgba(0, 0, 0, 0) 34%, #4C0108 33%);
+	background-size: 400%;
+	 -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.knockout{
+		animation: Gradient 15s ease infinite;
+		-webkit-animation: Gradient 10s ease infinite;
+		-moz-animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+
+}
+
+
+
+
+
 .header-right ul li{
   display: inline-block;
   border-radius: 5px;
-  padding:5px;
+  padding:5px 10px;
   color: #BEC3CB;
   background-color: #0B2854;
 }
@@ -149,7 +202,13 @@ input[type=radio   ]{
   width   : 72%;
 }
 .footer{
-  margin: 0px;
+  margin: 150px 0px 0px 0px;
+  display: block;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+  color: #BEC3CB;
+  background-color: #0B2854;
 }
 a{
   text-decoration: none;
@@ -229,6 +288,9 @@ a{
   padding:2.5px;
   margin: 2.5px
 }
+.prof{
+  padding:10px 30px;
+}
 .header-left h2:hover{
   color:#4C0108;
 }
@@ -281,6 +343,10 @@ a{
   .header{
     height: 100px;
   }
+  .header-left h2{
+    font-size: 35px;
+
+  }
   .header-right{font-size: 25px}
   .form{
     margin-left:0%;
@@ -300,6 +366,9 @@ a{
   .form{
     margin:0% 0% 0% 0%;
     width:100%;
+  }
+  .header-left h2{
+    font-size: 35px;
   }
   .container{
     top:100px;
