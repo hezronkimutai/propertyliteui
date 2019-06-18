@@ -50,10 +50,10 @@ font-size: 20px;
 }
 .header-right ul li:hover{
   background-color: #BEC3CB;
-  color: #0B2854;
+  color: #4C0108
 }
 .container{
-  top: 90px;
+  top: 60px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -73,14 +73,15 @@ font-size: 20px;
   position: relative;
   float: right;
   min-width: 500px;
-  width: 45%;
+  width: 52%;
   box-shadow: 0.5px 1.5px #4C0108;
   border-radius: 5px;
 }
 .container-left{
   position: relative;
   float: left;
-  width: 52%;
+  width: 45%;
+
   margin-right: 1%;
   padding:1%;
   min-width: 500px;
@@ -179,15 +180,16 @@ a{
   border-radius: 5px;
 }
 .dropdown-content a:hover {
-  background-color: #0B2854;
-  color:#BEC3CB;
+  /* background-color: #0B2854; */
+  color:#4C0108;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  color:#4C0108;
 }
 .dropdown:hover .dropbtn {
   background-color: #BEC3CB;
-  color: #0B2854;
+  color:#4C0108;
 }
 .flex-container {
   justify-content: center;
@@ -209,6 +211,9 @@ a{
   flex: 0 0 auto;
   flex-shrink: 0;
 }
+.prop:hover{
+  color: #4C0108;
+}
 .flex-container .pl {
   width: 200px;
   text-align: center;
@@ -224,6 +229,13 @@ a{
   padding:2.5px;
   margin: 2.5px
 }
+.header-left h2:hover{
+  color:#4C0108;
+}
+.header-left h2{
+  padding:10px;
+  margin-top:-2px;
+}
 .Prof{
   width: 100%;
   text-align: center;
@@ -233,8 +245,8 @@ a{
   border-radius: 10px;
 }
 .userInfo ul:hover{
-  background-color: #0B2854;
-  color:#BEC3CB;
+  /* background-color: #0B2854; */
+  color:#4C0108;
 }
 .prof img{
   width: 200px;
@@ -267,12 +279,15 @@ a{
   }
   body{font-size: 37px;}
   .header{
-    height: 110px;
+    height: 100px;
   }
-  .header-right{font-size: 35px}
+  .header-right{font-size: 30px}
   .form{
-    margin-left:10%;
-    width:80%;
+    margin-left:0%;
+    width:100%;
+  }
+  .container{
+    top:100px;
   }
   .container-left{
     width: 100% !important;
@@ -283,8 +298,11 @@ a{
 }
 @media only screen and (max-width: 600px) {
   .form{
-    margin:0% 3% 0% 3%;
-    width:89%;
+    margin:0% 0% 0% 0%;
+    width:100%;
+  }
+  .container{
+    top:100px;
   }
   .container-left{
     width: 100% !important;
