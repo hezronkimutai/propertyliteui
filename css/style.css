@@ -50,7 +50,7 @@ font-size: 20px;
 }
 .header-right ul li:hover{
   background-color: #BEC3CB;
-  color: #0B2854;
+  color: #4C0108
 }
 .container{
   top: 90px;
@@ -73,14 +73,15 @@ font-size: 20px;
   position: relative;
   float: right;
   min-width: 500px;
-  width: 45%;
+  width: 52%;
   box-shadow: 0.5px 1.5px #4C0108;
   border-radius: 5px;
 }
 .container-left{
   position: relative;
   float: left;
-  width: 52%;
+  width: 45%;
+
   margin-right: 1%;
   padding:1%;
   min-width: 500px;
@@ -179,15 +180,16 @@ a{
   border-radius: 5px;
 }
 .dropdown-content a:hover {
-  background-color: #0B2854;
-  color:#BEC3CB;
+  /* background-color: #0B2854; */
+  color:#4C0108;
 }
 .dropdown:hover .dropdown-content {
   display: block;
+  color:#4C0108;
 }
 .dropdown:hover .dropbtn {
   background-color: #BEC3CB;
-  color: #0B2854;
+  color:#4C0108;
 }
 .flex-container {
   justify-content: center;
@@ -209,6 +211,9 @@ a{
   flex: 0 0 auto;
   flex-shrink: 0;
 }
+.prop:hover{
+  color: #4C0108;
+}
 .flex-container .pl {
   width: 200px;
   text-align: center;
@@ -224,6 +229,13 @@ a{
   padding:2.5px;
   margin: 2.5px
 }
+.header-left h2:hover{
+  color:#4C0108;
+}
+.header-left h2{
+  padding:10px;
+  margin-top:-2px;
+}
 .Prof{
   width: 100%;
   text-align: center;
@@ -233,8 +245,8 @@ a{
   border-radius: 10px;
 }
 .userInfo ul:hover{
-  background-color: #0B2854;
-  color:#BEC3CB;
+  /* background-color: #0B2854; */
+  color:#4C0108;
 }
 .prof img{
   width: 200px;
