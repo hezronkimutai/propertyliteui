@@ -1,17 +1,34 @@
 body{
   background-color: #BEC3CB;
   color: #0B2854;
-
+font-size: 20px;
 }
 .header{
   position: fixed;
   margin: -9px 1% 0% 0%;
   z-index: 1;
   color:#BEC3CB;
-  height: 90px;
+  height: 60px;
   background-color: #0B2854;
   width: 99%;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
+}
+.header-form{
+  position: fixed;
+  margin: -9px 1% 0% 0%;
+  z-index: 1;
+  color:#0B2854;
+  height: 90px;
+  background-color: #BEC3CB;
+  width: 99%;
   font-size: 25px;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
+}
+.header-form-left{
+  text-align: center;
+  width: 100%;
 }
 .header-left{
   position: relative;
@@ -57,15 +74,21 @@ body{
   float: right;
   min-width: 500px;
   width: 45%;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
 }
 .container-left{
   position: relative;
   float: left;
-  width: 55%;
+  width: 52%;
+  margin-right: 1%;
+  padding:1%;
   min-width: 500px;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
 }
 .mySlides{
-  height: 200px;
+  height: 300px;
   width: 94%;
   padding:3%;
 }
@@ -85,6 +108,7 @@ body{
   color: #BEC3CB;
   border-radius: 5px;
   background-color: #0B2854;
+  box-shadow: 0.5px 1.5px #4C0108;
 }
 .form form ul li{
   text-align: right;
@@ -195,7 +219,8 @@ a{
   text-align: center;
 }
 .prop{
-  box-shadow: 1px 3px;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
   padding:2.5px;
   margin: 2.5px
 }
@@ -223,12 +248,28 @@ a{
 .s-prop img{
   width: 200px;
   height: 200px;
+  border-radius: 5px;
 }
 .prop img{
   width: 200px;
   height: 200px;
+  border-radius: 5px;
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1100px) {
+
+  input{
+    height: 30px;
+    font-size: 30px
+  }
+  .form form ul li input[type=submit   ]{
+    height: 30px;
+    font-size: 20px
+  }
+  body{font-size: 37px;}
+  .header{
+    height: 110px;
+  }
+  .header-right{font-size: 35px}
   .form{
     margin-left:10%;
     width:80%;
