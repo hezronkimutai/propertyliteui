@@ -289,6 +289,9 @@ a{
   .container{
     top:100px;
   }
+  .container{
+    top:100px;
+  }
   .container-left{
     width: 100% !important;
   }
@@ -305,6 +308,7 @@ a{
     top:100px;
   }
   .header-right{font-size: 25px}
+
   .container-left{
     width: 100% !important;
   }
