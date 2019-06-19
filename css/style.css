@@ -19,10 +19,9 @@ font-size: 20px;
   margin: -9px 1% 0% 0%;
   z-index: 1;
   color:#0B2854;
-  height: 90px;
+  height: 60px;
   background-color: #BEC3CB;
   width: 99%;
-  font-size: 25px;
   box-shadow: 0.5px 1.5px #4C0108;
   border-radius: 5px;
 }
@@ -209,6 +208,8 @@ input[type=radio   ]{
   width: 100%;
   color: #BEC3CB;
   background-color: #0B2854;
+  box-shadow: 0.5px 1.5px #4C0108;
+  border-radius: 5px;
 }
 a{
   text-decoration: none;
@@ -289,7 +290,8 @@ a{
   margin: 2.5px
 }
 .propf{
-  padding:10px 30px;
+
+  padding:10px 20px;
 }
 .header-left h2:hover{
   color:#4C0108;
