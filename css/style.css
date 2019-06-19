@@ -97,7 +97,7 @@ font-size: 20px;
 .header-right ul li{
   display: inline-block;
   border-radius: 5px;
-  padding:5px;
+  padding:5px 10px;
   color: #BEC3CB;
   background-color: #0B2854;
 }
@@ -202,7 +202,13 @@ input[type=radio   ]{
   width   : 72%;
 }
 .footer{
-  margin: 0px;
+  margin: 150px 0px 0px 0px;
+  display: block;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+  color: #BEC3CB;
+  background-color: #0B2854;
 }
 a{
   text-decoration: none;
@@ -281,6 +287,9 @@ a{
   border-radius: 5px;
   padding:2.5px;
   margin: 2.5px
+}
+.prof{
+  padding:10px 30px;
 }
 .header-left h2:hover{
   color:#4C0108;
