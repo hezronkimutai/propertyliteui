@@ -38,84 +38,45 @@
   </div>
     <!-- make sure there is a link to view more items. -->
     <h2 style="text-align:center; width:100%">Featured</h2>
-    <div class="flex-container">
+    <div class="flex-container" id="featured">
 
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img1.jpg" />
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img2.jpg"/>
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img3.jpg"/>
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img4.jpeg"/>
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img1.jpg"/>
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
-      <div class="prop">
-        <a href="property.html">
-        <img src="images/img5.jpg"/>
-        <p>Property name</p><a href="update-property.html">Update info</a>
-        </a>
-      </div>
       </div>
   </div>
   <div class="footer">
-    <div class="flex-container">
+    <div class="flex-container" id="footer">
+      <div class="propf"  >
+        <!-- <h3>Contact us</h3>
+      <p><a href="update-property.html">Update info</a></p>
+      <p><a href="update-property.html">Update info</a></p> -->
+      </div>
 
-      <div class="propf">
-      <h3>Social media</h3>
-
-        <p><a href="update-property.html">Update info</a></p>
-        <p><a href="update-property.html">Update info</a></p>
-
-      </div>
-      <div class="propf">
-        <h3>Contact us</h3>
-      <p><a href="update-property.html">Update info</a></p>
-      <p><a href="update-property.html">Update info</a></p>
-      </div>
-      <div class="propf">
-        <h3>Community</h3>
-        <p><a href="update-property.html">Update info</a></p>
-        <p><a href="update-property.html">Update info</a></p>
-      </div>
-      <div class="propf">
-        <h3>Jobs</h3>
-      <p><a href="update-property.html">Update info</a></p>
-      <p><a href="update-property.html">Update info</a></p>
-      </div>
-      <div class="propf">
-        <h3>Advertise</h3>
-      <p><a href="update-property.html">Update info</a></p>
-      <p><a href="update-property.html">Update info</a></p>
-      </div>
-      <div class="propf">
-        <h3>Announcements</h3>
-        <p><a href="update-property.html">Update info</a></p>
-        <p><a href="update-property.html">Update info</a></p>
-      </div>
       </div>
   </div>
 </body>
 
-<script src="js/main.js"></script>
+<script type="text/jscript" src="js/main.js"></script>
+<script type="text/jscript">
+function getBooks(){
+  fetch('http://localhost:3000/api/v1/properties')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(myJson)
+  var text = "";
+  var i;
+  for (i = 0; i < myJson.length; i++) {
+    text += '<div class="prop">'+
+            '<a href="property.html">'+
+            `<img src=${myJson[i].url} />`+
+            '<p>Property name</p><a href="update-property.html">Update info</a>'
+            +'</a>'+
+          '</div>'
+  }
+      document.getElementById("featured").innerHTML = text;
+
+    });
+}
+window.onload = getBooks;
+       </script>
 </html>
