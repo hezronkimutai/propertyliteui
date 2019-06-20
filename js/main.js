@@ -22,7 +22,8 @@ var mapProp= {
   center:myLatLng,
   zoom:5,
 };
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var pam =document.getElementById("googleMap")
+var map = new google.maps.Map(pam,mapProp);
 var marker = new google.maps.Marker({
   position: myLatLng,
   map: map,
@@ -30,12 +31,25 @@ var marker = new google.maps.Marker({
 });
 }
 
-function getBooks(){
-  fetch('http://example.com/movies.json')
+function getProperties(){
+  fetch('http://localhost:3000/api/v1/properties')
     .then(function(response) {
       return response.json();
     })
     .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
+      console.log(myJson)
+  var text = "";
+  var i;
+  for (i = 0; i < myJson.length; i++) {
+    text += '<div class="prop">'+
+            `<a href='UI/property.html'>`+
+            `<img src=${myJson[i].url} />`+
+            `<p>${myJson[i].name}</p>`
+            +'</a>'+
+          '</div>'
+  }
+      document.getElementById("featured").innerHTML = text;
+
     });
 }
+window.onload = getProperties,myMap, carousel;
