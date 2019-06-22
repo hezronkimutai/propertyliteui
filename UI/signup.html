@@ -11,51 +11,47 @@
   <div class="header-form"><div class="header-form-left"><h2><a href="../index.html">PropertyProLite</a></h2></div></div>
   <div class="container">
     <div class="form" >
-<form>
-  <!-- {
-“id” : Integer,
-“email” : String,
-“first_name” : String,
-“last_name” : String,
-“password” : String,
-“phoneNumber” : String,
-“address” : String,
-“is_admin” : Boolean,
-...
-} -->
+<form >
+
   <h2>Signup</h2>
   <ul>
 
     <li>
       <label for="f-name">First Name</label>
-      <input type="text"  name="f-name" placeholder="First Name">
+      <input type="text" id="firstName"  name="f-name" placeholder="First Name">
     </li>
     <li>
       <label for="s-name">Second Name</label>
-      <input type="text"  name="s-name" placeholder="Second Name">
+      <input type="text" id="secondName"  name="s-name" placeholder="Second Name">
+    </li>
+    <li>
+      <label for="s-name">User Name</label>
+      <input type="text" id="userName" name="s-name" placeholder="Second Name">
     </li>
     <li>
       <label for="email">email</label>
-      <input type="email"  name="email" placeholder="email">
+      <input type="email" id="email" name="email" placeholder="email">
     </li>
     <li>
       <label for="phone">Phone Number</label>
-      <input type="text"  name="phone" placeholder="Phone Number">
+      <input type="text" id="phoneNumber" name="phone" placeholder="Phone Number">
     </li>
     <li>
       <label for="password">password</label>
-      <input type="password"  name="password" placeholder="password">
+      <input type="password" id="password" name="password" placeholder="password">
     </li>
     <li>
       <label for="c-password">confirm</label>
-      <input type="password"  name="c-password" placeholder="confirm password">
+      <input type="password" id="confirmPassword" name="c-password" placeholder="confirm password">
     </li>
     <li>
       <input type="submit" value="Submit">
+
     </li>
   </ul>
   <p>Already have an account? <a href="login.html">login here</a></p>
 </form>
+<button onclick="createUser()">click me</button>
 </div>
   </div>
   <div class="footer">
@@ -96,5 +92,5 @@
       </div>
   </div>
 </body>
-
+  <script type="text/javascript" src="../js/signup.js"></script>
 </html>
