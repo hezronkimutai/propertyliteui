@@ -1,20 +1,22 @@
 
 function getProperties(){
-  fetch('http://localhost:3000/api/v1/properties')
+  fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties')
     .then(function(response) {
       return response.json();
     })
     .then(function(myJson) {
-      console.log(myJson)
+      // console.log(myJson.data)
   var text = "";
   var i;
-  for (i = 0; i < myJson.length; i++) {
+  for (i = 0; i < myJson.data.length; i++) {
     text += '<div class="prop">'+
             `<a href='UI/property.html'>`+
-            `<img src=${myJson[i].url} />`+
-            `<p>${myJson[i].name}</p>`
+            `<img src=${myJson.data[i].url} />`+
+            `<p>${myJson.data[i].name}</p>`
             +'</a>'+
           '</div>'
+
+    console.log(myJson.data[i])
   }
       document.getElementById("featured").innerHTML = text;
 

@@ -13,3 +13,4 @@ var marker = new google.maps.Marker({
   title: 'Hello World!'
 });
 }
+window.onload =  myMap;
