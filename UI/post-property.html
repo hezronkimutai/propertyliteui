@@ -36,49 +36,47 @@
 
   <h2>Post Property</h2>
   <ul>
+
     <li>
-      <label for="category">Category</label>
-      <select name="category">
-        <option value="vehicles">Vehicles</option>
-        <option value="electronics">Electronics</option>
-        <option value="clothing">Clothing</option>
-      </select>
+      <label for="category">category</label>
+      <input type="text" id="category" name="category" placeholder="e.g Electronics Vehicles">
     </li>
 
     <li>
       <label for="name">name</label>
-      <input type="text"  name="name" placeholder="property name">
+      <input type="text"  id="name" name="name" placeholder="property name">
     </li>
 
     <li>
-      <label for="category">Reason</label>
-      <select name="category">
-        <option value="sell">Sell</option>
-        <option value="rent">Rent</option>
-      </select>
+      <label for="reason">reason</label>
+      <input type="text" id="reason" name="reason" placeholder="e.g rent or sell">
     </li>
     <li>
       <label for="price">price</label>
-      <input type="text"  name="price" placeholder="Price">
+      <input type="text" id="price" name="price" placeholder="Price">
     </li>
     <li>
-      <label for="description">state</label>
-      <input type="text"  name="description" placeholder="Property description">
+      <label for="state">state</label>
+      <input type="text" id="state" name="state" placeholder="State">
     </li>
     <li>
-      <label for="description">city</label>
-      <input type="text"  name="description" placeholder="Property description">
+      <label for="city">city</label>
+      <input type="text" id="city" name="city" placeholder="city">
     </li>
     <li>
       <label for="address">Address</label>
-      <input type="text"  name="address" placeholder="Address">
+      <input type="text" id="address" name="address" placeholder="Address">
     </li>
     <li>
       <label for="map">map points</label>
-      <input type="text"  name="map" placeholder="e.g 51.508742,-0.120850">
+      <input type="text" id="map" name="map" placeholder="e.g 51.508742,-0.120850">
     </li>
     <li>
-      <textarea type="text"  name="description"> Property description</textarea>
+      <textarea type="text" id="description" name="description"> Property description</textarea>
+    </li>
+    <li>
+      <label for="propImg">Img</label>
+      <input id="propImg" type="file" onchange="Submit(this)">
     </li>
     <li>
       <input type="submit" value="Submit">
@@ -125,5 +123,5 @@
       </div>
   </div>
 </body>
-
+  <script type="text/javascript" src="../js/post_property.js"></script>
 </html>
