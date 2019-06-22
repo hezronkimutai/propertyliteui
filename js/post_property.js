@@ -1,4 +1,4 @@
-async function Submit(){
+async function createProperty(){
   let p = document.getElementById("propImg");
   let propImg = p.files[0];
   url = 'https://api.cloudinary.com/v1_1/hezzie/image/upload';
