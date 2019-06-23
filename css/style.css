@@ -41,7 +41,14 @@ font-size: 20px;
   list-style: none;
 }
 
-
+#logout{
+  color:#BEC3CB;
+  background-color: #0B2854;
+}
+#logout:hover{
+  color:#4C0108 ;
+  background-color: #BEC3CB;
+}
 
 
 .border{
@@ -62,7 +69,6 @@ font-size: 20px;
 
 	vertical-align: middle;
 	text-align: center;
-	font-family: 'Pacifico', cursive;
 	font-size:30px;
 	color:#4C0108;
 		background: linear-gradient(150deg, #0B2854 33%, rgba(0, 0, 0, 0) 34%), linear-gradient(150deg, rgba(0, 0, 0, 0) 34%, #4C0108 33%);
@@ -149,7 +155,7 @@ font-size: 20px;
   margin-left:25%;
   width:50%;
 }
-.form form{
+.form div {
   display:inline-block;
   text-align: center;
   width: 100%;
@@ -157,48 +163,48 @@ font-size: 20px;
   margin:30px 0px;
   color: #0B2854;
 }
-.form form ul{
+.form div ul{
   color: #BEC3CB;
   border-radius: 5px;
   background-color: #0B2854;
   box-shadow: 0.5px 1.5px #4C0108;
 }
-.form form ul li{
+.form div ul li{
   text-align: right;
   width: 100%;
   font-weight: 400;
 }
-.form form ul #sold{
+.form div ul #sold{
   text-align: center;
   width: 100%;
   font-weight: 400;
 }
-.form form ul li select{
+.form div ul li select{
   text-align: center;
   width: 72%;
   margin:10px 30px 10px 0px;
   padding:5px;
   border-radius: 5px;
 }
-.form form ul li input{
+.form div ul li input{
   border-radius: 5px;
   text-align: center;
   width: 70%;
   margin:10px 30px 10px 0px;
   padding:5px;
 }
-.form form ul li textarea{
+.form div ul li textarea{
   border-radius: 5px;
   text-align: center;
   width: 70%;
   margin:10px 30px 10px 0px;
   padding:5px;
 }
-input[type=radio   ]{
-  width   : 28px !important;
-}
-.form form ul li input[type=submit   ]{
+
+.form div ul li button{
   width   : 72%;
+  margin:0px 4% 1% 0px;
+  padding:1% 0% 1% 0%;
 }
 .footer{
   margin: 150px 0px 0px 0px;

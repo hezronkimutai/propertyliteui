@@ -33,6 +33,25 @@ function getProperties(){
             `<p>${myJson.data[i].name}</p>`
             +'</a>'+
           '</div>'
+  
+  }
+  console.log(localStorage.getItem('myCat'))
+
+  if(localStorage.getItem('myCat')!='tom'){
+    var  nav=`<li><a href="UI/properties.html">properties</a></li>
+              <li><a href="UI/login.html">login</a></li>
+              <li><a href="UI/signup.html">signup</a></li>`
+    var  message = `<li> Invalid credentials </li>`
+
+    document.getElementById("nav").innerHTML = nav;
+  }else{
+    var  nav=`<li><a href="UI/properties.html">properties</a></li>
+              <li><a href="UI/post-property.html">Post property</a></li>
+              <li><a href="UI/profile.html">Profile</a></li>
+                  <li id = "logout" onclick="logoutUser()">logout</li>`
+    var  message = `<li> Login succesful </li>`
+
+    document.getElementById("nav").innerHTML = nav;
   }
       document.getElementById("featured").innerHTML = text;
 
@@ -40,4 +59,5 @@ function getProperties(){
 }
 
 
-window.onload = getProperties, carousel;
+
+window.onload = getProperties,carousel;

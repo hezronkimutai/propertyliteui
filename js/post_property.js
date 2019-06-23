@@ -33,6 +33,7 @@ return response.json();
 })
 .then(function(myJson) {
 console.log(myJson);
+window.location.href = 'profile.html'
 
 })
 });
