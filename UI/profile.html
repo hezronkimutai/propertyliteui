@@ -23,14 +23,17 @@
     <div class="flex-container">
   <div class="pl">
     <div class="flex-container">
-      <div class="prof">
-        <img src="../images/img6.jpg"/>
+      <div class="prof" >
+      <img id="ppicc"/>
+        <label for="avatar">Choose a profile picture:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+
+       onchange="updatePpic(this)">
         <a class="userInfo" href="update-user.html">
-        <ul >
-          <li>Username: Hezzie</li>
-          <li>Name: Hezron kimutai</li>
-          <li>email: hez@gmail.com</li>
-          <li>Phone: 0977898890</li>
+        <ul id="userInfo" >
+
         </ul>
       </a>
 
@@ -68,6 +71,7 @@
       </div>
   </div>
 </body>
+  <script type="text/javascript" src="../js/ppic.js"></script>
   <script type="text/javascript" src="../js/profile.js"></script>
     <script type="text/javascript" src="../js/update_property.js"></script>
 </html>

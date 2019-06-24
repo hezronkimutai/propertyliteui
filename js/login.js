@@ -1,3 +1,6 @@
+//
+//http://127.0.0.1:3000/api/v2/users/
+
 async function loginUser(){
 
 try{
@@ -5,17 +8,18 @@ try{
     'email':document.getElementById("email").value,
     'password':document.getElementById("password").value
   });
-  console.log(user);
  let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
  fetch('https://propertyproliteapi.herokuapp.com/api/v2/users/login', options)
  .then(function(response) {
- return response.json();
+     console.log(response);
+  return response.json();
+
  })
  .then(function(myJson) {
  console.log(myJson);
-localStorage.setItem('myCat',"tom");
-console.log(localStorage.getItem('myCat'));
-window.location.href = '../index.html'
+localStorage.setItem('user',myJson);
+console.log(localStorage.getItem('user'));
+// window.location.href = '../index.html'
 
  })
 }catch(e){
@@ -24,5 +28,11 @@ window.location.href = '../index.html'
 
 
 }
+console.log(localStorage.getItem('user'));
 
   }
+
+
+// Lat long
+
+// -1.2240615,36.900340899999996

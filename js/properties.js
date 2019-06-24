@@ -11,22 +11,28 @@ function getProperties(){
   var i;
   for (i = 0; i < myJson.data.length; i++) {
     text += '<div class="prop">'+
-            `<a href='UI/property.html'>`+
-            `<img src=${myJson.data[i].url} />`+
-            `<p>${myJson.data[i].name}</p>`
-            +'</a>'+
-          '</div>'
+            `<img src=${myJson.data[i].url} >`+
+            `<p id="update" onclick="storeP(${myJson.data[i].id})">${myJson.data[i].name}</p>`+
+            `</p></div>`
 
     categories +=`<a href="#">`+
                   myJson.data[i].category +
                   `</a>`
 
-    console.log(myJson.data[i])
+    // console.log(myJson.data[i]);
   }
-  console.log(localStorage.getItem('myCat'))
 
-  if(localStorage.getItem('myCat')!='tom'){
-    var  nav=`<li><a href="properties.html">properties</a></li>
+
+
+  if(!localStorage.getItem('user')){
+    var  nav=`<li>
+                <div class="dropdown">
+                  <div class="dropbtn">Categories</div>
+                  <div class="dropdown-content" id="categories">
+                  </div>
+                </div>
+              </li>
+              <li><a href="properties.html">properties</a></li>
               <li><a href="login.html">login</a></li>
               <li><a href="signup.html">signup</a></li>`
     var  message = `<li> Invalid credentials </li>`
@@ -48,12 +54,14 @@ function getProperties(){
 
     document.getElementById("nav").innerHTML = nav;
   }
+  console.log(document.getElementById("featured"))
 
       document.getElementById("featured").innerHTML = text;
-          document.getElementById("categories").innerHTML = categories;
-
+      document.getElementById("categories").innerHTML = categories;
     });
 }
+
+
 
 
 

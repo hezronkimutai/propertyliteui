@@ -39,7 +39,7 @@ return response.json();
 .then(function(myJson) {
 console.log(myJson);
 localStorage.removeItem('id');
-// window.location.href = 'profile.html'
+window.location.href = 'profile.html'
 
 })
 });
