@@ -1,5 +1,5 @@
 async function logoutUser(){
 localStorage.removeItem('myCat');
-location.reload();
+window.location.href = '../index.html'
 
   }

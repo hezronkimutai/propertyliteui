@@ -12,23 +12,26 @@ function getProperties(){
     text += '<div class="prop">'+
             `<img src=${myJson.data[i].url} />`+
             `<p>${myJson.data[i].name}</p>`+
+            `<p id="update" onclick="store(${myJson.data[i].id})">Update Property</p>`+
             `<p id="delete" onclick="deleteProperty(${myJson.data[i].id})">Delete Property</p>`+
           '</div>'
   }
       document.getElementById("featured").innerHTML = text;
 
     });
+    document.getElementById('ppicc').setAttribute("src", localStorage.getItem('ppc'))
 }
 
 function deleteProperty(id){
   fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${id}`, {
     method: 'DELETE'
-    // headers: {'Content-Type': 'application/json'},
-    // body: JSON.stringify({id: '5bdcdfa40f0a326f858feae0'})
   })
   .then(res => res.text()) // OR res.json()
-  .then(res => console.log(res))
-    // console.log("===================",y)
+  .then(res => {
+    console.log(res)
+    window.location.href = 'profile.html'
+  })
+
 
 }
 window.onload = getProperties;
