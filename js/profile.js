@@ -19,6 +19,7 @@ function getProperties(){
       document.getElementById("featured").innerHTML = text;
 
     });
+    document.getElementById('ppicc').setAttribute("src", localStorage.getItem('ppc'))
 }
 
 function deleteProperty(id){
