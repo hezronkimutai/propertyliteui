@@ -13,7 +13,7 @@ fetch(url, config)
 return response.json();
 })
 .then(function(myJson) {
-// localStorage.setItem('ppc',);
+
 
 let ppic =JSON.stringify({
   'url':myJson.secure_url
@@ -29,6 +29,9 @@ console.log(myJson);
 // window.location.href = 'profile.html'
 
 })
+
+localStorage.setItem('ppc',myJson.secure_url);
+
 
 })
 
