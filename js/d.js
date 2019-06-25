@@ -18,7 +18,6 @@ function storeP(id){
 
 
 function getP(){
-  console.log(localStorage.getItem('user').id);
       let dd =  `<img src="${localStorage.getItem('thisPimg')}">`+
               `<p>${localStorage.getItem('thisPdes')}</p>`+
               `<p><a href="viewmap.html">View location</a></p>`
