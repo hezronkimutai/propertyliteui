@@ -64,7 +64,6 @@ function getProperties(){
     });
 
 
-
     document.getElementById('ppicc').setAttribute("src", localStorage.getItem('ppc'))
 
 }
