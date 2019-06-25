@@ -13,7 +13,25 @@ fetch(url, config)
 return response.json();
 })
 .then(function(myJson) {
+
+
+let ppic =JSON.stringify({
+  'url':myJson.secure_url
+});
+ // console.log(user);
+let options = {method: "PATCH", body: ppic, headers:{"Content-Type": "application/json"}}
+fetch(`https://propertyproliteapi.herokuapp.com/api/v2/users/${localStorage.getItem('user_id')}`, options)
+.then(function(response) {
+return response.json();
+})
+.then(function(myJson) {
+console.log(myJson);
+// window.location.href = 'profile.html'
+
+})
+
 localStorage.setItem('ppc',myJson.secure_url);
+
 
 })
 
