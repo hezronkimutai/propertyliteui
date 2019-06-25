@@ -24,7 +24,7 @@ function getProperties(){
 
 
 
-  if(!localStorage.getItem('user')){
+  if(!localStorage.getItem('token')){
     var  nav=`<li>
                 <div class="dropdown">
                   <div class="dropbtn">Categories</div>

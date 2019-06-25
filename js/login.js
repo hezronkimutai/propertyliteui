@@ -11,15 +11,20 @@ try{
  let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
  fetch('https://propertyproliteapi.herokuapp.com/api/v2/users/login', options)
  .then(function(response) {
-     console.log(response);
   return response.json();
 
  })
  .then(function(myJson) {
- console.log(myJson);
-localStorage.setItem('user',myJson);
-console.log(localStorage.getItem('user'));
-// window.location.href = '../index.html'
+localStorage.setItem('token',myJson.token);
+localStorage.setItem('username',myJson.data[0].username);
+localStorage.setItem('firstname',myJson.data[0].firstname);
+localStorage.setItem('secondname',myJson.data[0].secondname);
+localStorage.setItem('email',myJson.data[0].email);
+localStorage.setItem('phonenumber',myJson.data[0].phonenumber);
+localStorage.setItem('user_id',myJson.data[0].id);
+localStorage.setItem('ppc',myJson.data[0].profilepic);
+window.location.href = '../index.html'
+console.log(localStorage.getItem('ppc'))
 
  })
 }catch(e){
@@ -28,11 +33,5 @@ console.log(localStorage.getItem('user'));
 
 
 }
-console.log(localStorage.getItem('user'));
 
   }
-
-
-// Lat long
-
-// -1.2240615,36.900340899999996

@@ -16,14 +16,14 @@ function getProperties(){
   for (i = 0; i < myJson.data.length; i++) {
     text += '<div class="prop">'+
             `<img src=${myJson.data[i].url} />`+
-          `<p onclick="storeProperty(${myJson.data[i].name})">${myJson.data[i].name}</p>`+
+        `<p id="update" onclick="storeP(${myJson.data[i].id})">${myJson.data[i].name}</p>`+
           '</div>'
 
     slides += `<img class="mySlides" src="${myJson.data[i].url}">`
 
   }
 
-  if(!localStorage.getItem('user')){
+  if(!localStorage.getItem('token')){
     var  nav=`<li><a href="UI/properties.html">properties</a></li>
               <li><a href="UI/login.html">login</a></li>
               <li><a href="UI/signup.html">signup</a></li>`
@@ -34,7 +34,7 @@ function getProperties(){
     var  nav=`<li><a href="UI/properties.html">properties</a></li>
               <li><a href="UI/post-property.html">Post property</a></li>
               <li><a href="UI/profile.html">Profile</a></li>
-                  <li id = "logout" onclick="logoutUser()">logout</li>`
+                  <li id = "logout" onclick="logoutUserI()">logout</li>`
     var  message = `<li> Login succesful </li>`
 
     document.getElementById("nav").innerHTML = nav;
@@ -62,8 +62,21 @@ function getProperties(){
     });
 }
 
-function storeProperty(user){
-  console.log("--------------------",user);
+function storeP(id){
+  console.log(id)
+  fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${id}`)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson){
+      localStorage.setItem('thisPimg',myJson.data[0].url);
+      localStorage.setItem('thisPdes',myJson.data[0].description);
+      localStorage.setItem('thisPmap',myJson.data[0].map);
+//       let c = localStorage.getItem('thisP')
+// console.log("_________________",myJson.data[0],c)
+        window.location.href = 'UI/property.html'
+
+    })
 
 }
 

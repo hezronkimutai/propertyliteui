@@ -1,5 +1,8 @@
 function myMap() {
-  var myLatLng = new google.maps.LatLng(51.508742,-0.120850);
+  console.log(localStorage.getItem('thisPmap'))
+  let latitude = parseFloat(localStorage.getItem('thisPmap').split(',')[0], 10);
+  let longitude = parseFloat(localStorage.getItem('thisPmap').split(',')[1], 10);
+  var myLatLng = new google.maps.LatLng(latitude, longitude);
 
 var mapProp= {
   center:myLatLng,
