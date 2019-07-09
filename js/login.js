@@ -9,7 +9,7 @@ try{
     'password':document.getElementById("password").value
   });
  let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
- fetch('https://propertyproliteapi.herokuapp.com/api/v2/users/login', options)
+ fetch('https://propertyproliteapi.herokuapp.com/api/v1/users/login', options)
  .then(function(response) {
   return response.json();
 

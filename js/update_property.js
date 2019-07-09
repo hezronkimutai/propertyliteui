@@ -32,7 +32,7 @@ let property =JSON.stringify({
 });
  console.log(property);
 let options = {method: "PUT", body: property, headers:{"Content-Type": "application/json"}}
-fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${localStorage.getItem('id')}`, options)
+fetch(`https://propertyproliteapi.herokuapp.com/api/v1/properties/${localStorage.getItem('id')}`, options)
 .then(function(response) {
 return response.json();
 })

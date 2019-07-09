@@ -23,7 +23,7 @@
 // }
 
 function deleteProperty(id){
-  fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${id}`, {
+  fetch(`https://propertyproliteapi.herokuapp.com/api/v1/properties/${id}`, {
     method: 'DELETE'
   })
   .then(res => res.text()) // OR res.json()

@@ -27,7 +27,7 @@ let property =JSON.stringify({
 });
  console.log(property);
 let options = {method: "POST", body: property, headers:{"Content-Type": "application/json"}}
-fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties/post-property', options)
+fetch('https://propertyproliteapi.herokuapp.com/api/v1/properties/post-property', options)
 .then(function(response) {
 return response.json();
 })

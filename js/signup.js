@@ -10,7 +10,7 @@ let user =JSON.stringify({
 });
  console.log(user);
 let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
-fetch('https://propertyproliteapi.herokuapp.com/api/v2/users/signup', options)
+fetch('https://propertyproliteapi.herokuapp.com/api/v1/users/signup', options)
 .then(function(response) {
 return response.json();
 })

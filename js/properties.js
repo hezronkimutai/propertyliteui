@@ -1,6 +1,6 @@
 
 function getProperties(){
-  fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties')
+  fetch('https://propertyproliteapi.herokuapp.com/api/v1/properties')
     .then(function(response) {
       return response.json();
     })

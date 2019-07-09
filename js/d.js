@@ -1,6 +1,6 @@
 function storeP(id){
   console.log(id)
-  fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${id}`)
+  fetch(`https://propertyproliteapi.herokuapp.com/api/v1/properties/${id}`)
     .then(function(response) {
       return response.json();
     })

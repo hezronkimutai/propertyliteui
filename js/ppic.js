@@ -20,7 +20,7 @@ let ppic =JSON.stringify({
 });
 
 let options = {method: "PATCH", body: ppic, headers:{"Content-Type": "application/json"}}
-fetch(`https://propertyproliteapi.herokuapp.com/api/v2/users/${localStorage.getItem('user_id')}`, options)
+fetch(`https://propertyproliteapi.herokuapp.com/api/v1/users/${localStorage.getItem('user_id')}`, options)
 .then(function(response) {
 return response.json();
 })

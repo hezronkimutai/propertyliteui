@@ -206,16 +206,26 @@ font-size: 20px;
   margin:0px 4% 1% 0px;
   padding:1% 0% 1% 0%;
 }
+.main-container{
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  position: absolute;
+}
 .footer{
   margin: 150px 0px 0px 0px;
   display: block;
   min-height: 50px;
-  position: relative;
+  position: absolute;
+  bottom:0px;
   width: 100%;
   color: #BEC3CB;
   background-color: #0B2854;
   box-shadow: 0.5px 1.5px #4C0108;
   border-radius: 5px;
+}
+.featured{
+margin-top: 60px; 
 }
 a{
   text-decoration: none;
