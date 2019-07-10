@@ -2,6 +2,15 @@ body{
   background-color: #BEC3CB;
   color: #0B2854;
 font-size: 20px;
+position: relative;
+height:auto;
+}
+.main-container{
+top:60px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
 }
 .header{
   position: fixed;
@@ -110,8 +119,11 @@ font-size: 20px;
   background-color: #BEC3CB;
   color: #4C0108
 }
+.featured{
+  width: 100%;
+  position: relative;
+}
 .container{
-  top: 60px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -120,7 +132,7 @@ font-size: 20px;
   flex-wrap: wrap;
   margin: 0px;
   position: relative;
-  width:99.7%;
+  width:100%;
   height:auto;
 }
 .container >div{
@@ -139,7 +151,6 @@ font-size: 20px;
   position: relative;
   float: left;
   width: 45%;
-
   margin-right: 1%;
   padding:1%;
   min-width: 500px;
@@ -207,9 +218,6 @@ font-size: 20px;
   padding:1% 0% 1% 0%;
 }
 .footer{
-  margin: 150px 0px 0px 0px;
-  display: block;
-  min-height: 50px;
   position: relative;
   width: 100%;
   color: #BEC3CB;
