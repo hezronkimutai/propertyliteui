@@ -1,18 +1,4 @@
 async function createProperty(){
-  let p = document.getElementById("propImg");
-  let propImg = p.files[0];
-  url = 'https://api.cloudinary.com/v1_1/hezzie/image/upload';
-  uploadPreset = 'cieprwth';
-  let fd = new FormData();
-  fd.append("upload_preset", uploadPreset);
-  fd.append("file", propImg);
-  config = {headers: { "X-Requested-With": "XMLHttpRequest" },method: "POST", body: fd};
-
-fetch(url, config)
-.then(function(response) {
-return response.json();
-})
-.then(function(myJson) {
 let property =JSON.stringify({
   url:myJson.secure_url,
   'category':document.getElementById("category").value,
@@ -25,16 +11,8 @@ let property =JSON.stringify({
   'map':document.getElementById("map").value,
   'description':document.getElementById("description").value
 });
- console.log(property);
-let options = {method: "POST", body: property, headers:{"Content-Type": "application/json"}}
-fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties/post-property', options)
-.then(function(response) {
-return response.json();
-})
-.then(function(myJson) {
+
 console.log(myJson);
 window.location.href = 'profile.html'
 
-})
-});
   }

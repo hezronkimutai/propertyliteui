@@ -1,25 +1,58 @@
 
 
-
-
+var mdata = [
+  {
+   "category": "Sifn fgle room",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url": "images/img3.jpg",
+   "id": 3751
+ },
+ {
+   "category": "Sifn fgle room",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url": "images/img1.jpg",
+   "id": 4172
+ },
+ {
+   "category": "",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url":"images/img2.jpg",
+   "id": 2729
+ }
+]
 
 function getProperties(){
-  fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(myJson)
   var text = "";
   var slides ="";
   var i;
-  for (i = 0; i < myJson.data.length; i++) {
+  for (i = 0; i < mdata.length; i++) {
     text += '<div class="prop">'+
-            `<img src=${myJson.data[i].url} />`+
-        `<p id="update" onclick="storeP(${myJson.data[i].id})">${myJson.data[i].name}</p>`+
+            `<img src=${mdata[i].url} />`+
+        `<p id="update" onclick="storeP(${mdata[i].id})">${mdata[i].name}</p>`+
           '</div>'
 
-    slides += `<img class="mySlides" src="${myJson.data[i].url}">`
+    slides += `<img class="mySlides" src="${mdata[i].url}">`
 
   }
 
@@ -53,31 +86,15 @@ function getProperties(){
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(carousel, 3000);
     }
-
-
-      // document.getElementById("slides").innerHTML = ;
-
-    });
 }
 
 function storeP(id){
-  console.log(id)
-  fetch(`https://propertyproliteapi.herokuapp.com/api/v2/properties/${id}`)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson){
-      localStorage.setItem('thisPimg',myJson.data[0].url);
-      localStorage.setItem('thisPdes',myJson.data[0].description);
-      localStorage.setItem('thisPmap',myJson.data[0].map);
-//       let c = localStorage.getItem('thisP')
-// console.log("_________________",myJson.data[0],c)
-        window.location.href = 'UI/property.html'
-
-    })
-
+      localStorage.setItem('thisPimg',mdata[0].url);
+      localStorage.setItem('thisPdes',mdata[0].description);
+      localStorage.setItem('thisPmap',mdata[0].map);
+      window.location.href = 'UI/property.html'
 }
 
 
