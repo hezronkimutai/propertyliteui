@@ -1,6 +1,14 @@
-//
-//http://127.0.0.1:3000/api/v2/users/
-
+var ldata= {
+    "firstName": "hezron",
+    "secondName": "kimutai",
+    "userName": "hezzie",
+    "email": "hez@gmail.com",
+    "phoneNumber": "0937892356",
+    "password": "reqfhgtfhfgjfg",
+    "profilePic": "",
+    "id": 3742,
+    "token": "reqfhgtfhfgjfg"
+  }
 async function loginUser(){
 
 try{
@@ -8,25 +16,17 @@ try{
     'email':document.getElementById("email").value,
     'password':document.getElementById("password").value
   });
- let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
- fetch('https://propertyproliteapi.herokuapp.com/api/v2/users/login', options)
- .then(function(response) {
-  return response.json();
-
- })
- .then(function(myJson) {
-localStorage.setItem('token',myJson.token);
-localStorage.setItem('username',myJson.data[0].username);
-localStorage.setItem('firstname',myJson.data[0].firstname);
-localStorage.setItem('secondname',myJson.data[0].secondname);
-localStorage.setItem('email',myJson.data[0].email);
-localStorage.setItem('phonenumber',myJson.data[0].phonenumber);
-localStorage.setItem('user_id',myJson.data[0].id);
-localStorage.setItem('ppc',myJson.data[0].profilepic);
+localStorage.setItem('token',ldata.token);
+localStorage.setItem('username',ldata.username);
+localStorage.setItem('firstname',ldata.firstname);
+localStorage.setItem('secondname',ldata.secondname);
+localStorage.setItem('email',ldata.email);
+localStorage.setItem('phonenumber',ldata.phonenumber);
+localStorage.setItem('user_id',ldata.id);
+localStorage.setItem('ppc',ldata.profilepic);
 window.location.href = '../index.html'
 console.log(localStorage.getItem('ppc'))
 
- })
 }catch(e){
 
   console.log(e);

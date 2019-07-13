@@ -1,25 +1,59 @@
-
+var prdata = [
+  {
+   "category": "Sifn fgle room",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url": "../images/img3.jpg",
+   "id": 3751
+ },
+ {
+   "category": "Sifn fgle room",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url": "../images/img1.jpg",
+   "id": 4172
+ },
+ {
+   "category": "",
+   "name": "Houscbhfxce",
+   "reason": "renfhfcbct",
+   "price": "7000",
+   "state": "tancbvbczania",
+   "city": "arusha",
+   "address": "76768",
+   "map": "90800,89900",
+   "description": "Very coovbvbvl house",
+   "url":"../images/img2.jpg",
+   "id": 2729
+ }
+]
 function getProperties(){
-  fetch('https://propertyproliteapi.herokuapp.com/api/v2/properties')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      // console.log(myJson.data)
   var text = "";
   var categories="";
   var i;
-  for (i = 0; i < myJson.data.length; i++) {
+  for (i = 0; i < prdata.length; i++) {
     text += '<div class="prop">'+
-            `<img src=${myJson.data[i].url} >`+
-            `<p id="update" onclick="storeP(${myJson.data[i].id})">${myJson.data[i].name}</p>`+
+            `<img src=${prdata[i].url} >`+
+            `<p id="update" onclick="storeP(${prdata[i].id})">${prdata[i].name}</p>`+
             `</p></div>`
 
     categories +=`<a href="#">`+
-                  myJson.data[i].category +
+                  prdata[i].category +
                   `</a>`
 
-    // console.log(myJson.data[i]);
+    // console.log(prdata[i]);
   }
 
 
@@ -58,7 +92,7 @@ function getProperties(){
 
       document.getElementById("featured").innerHTML = text;
       document.getElementById("categories").innerHTML = categories;
-    });
+
 }
 
 
