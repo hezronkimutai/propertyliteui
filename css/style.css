@@ -10,7 +10,7 @@ body {
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: red;
+    background-color: rgb(117, 113, 184);
     z-index: 1;
 }
 
@@ -81,45 +81,20 @@ body {
     min-width: 360px;
     display: inline-block;
     margin: 1%;
-    background-color: blueviolet;
+    display: flex;
 }
 
-.feature {
+.featured div .profile {
+    width: 20px;
+}
+
+.featured div .review {
+    width: 80%;
+}
+
+.featured .card img {
     width: 100%;
     position: relative;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.feature div {
-    width: 23%;
-    min-width: 360px;
-    display: inline-block;
-    margin: 1%;
-    background-color: rgb(43, 55, 226);
-}
-
-.featur {
-    width: 100%;
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.featur div {
-    width: 23%;
-    min-width: 360px;
-    display: inline-block;
-    margin: 1%;
-    background-color: rgb(226, 70, 43);
 }
 
 h2 {
@@ -196,8 +171,8 @@ input[type=submit]:hover {
     top: 45px;
     height: auto;
     width: 100%;
-    background-color: red;
     margin-bottom: 2px;
+    background-color: rgb(117, 113, 184);
 }
 
 @media only screen and (max-width: 800px) {
