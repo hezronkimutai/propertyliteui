@@ -84,14 +84,6 @@ body {
     display: flex;
 }
 
-.featured div .profile {
-    width: 20px;
-}
-
-.featured div .review {
-    width: 80%;
-}
-
 .featured .card img {
     width: 100%;
     position: relative;
