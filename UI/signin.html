@@ -35,26 +35,10 @@
     <div class="container">
         <div class="form">
             <h2>Signin</h2>
-            <form action="/action_page.php">
+            <h4 id="error" class="error"></h4>
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Email</label>
+                        <label for="email">Email</label>
                     </div>
                     <div class="col-75">
                         <input type="email" id="email" name="email" placeholder="Your email.." required>
@@ -65,16 +49,15 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="password" name="password" placeholder="Your password.." required>
+                        <input type="password" id="password" name="password" placeholder="Your password.." required>
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit" required>
+                    <button type="submit" value="Submit" onclick='signin()'> submit </button>
                 </div>
-            </form>
         </div>
     </div>
-    <script src="" async defer></script>
+    <script type="text/javascript" src="../js/signin.js"></script>
 </body>
 
 </html>
