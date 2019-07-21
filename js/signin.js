@@ -1,4 +1,4 @@
-async function signin(){
+const signin = async() => {
   let user =JSON.stringify({
     'email':document.getElementById("email").value,
     'password':document.getElementById("password").value
@@ -10,6 +10,7 @@ async function signin(){
     if(content.status !== 201){
       return document.getElementById('error').innerHTML = content.Error
     }else{
+      localStorage.setItem('token', content.token);
       window.location.href = '../index.html'
     }   
   }

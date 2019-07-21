@@ -1,4 +1,4 @@
-async function createUser(){
+const createUser = async() => {
 let user =JSON.stringify({
   'firstname':document.getElementById("firstname").value,
   'lastname':document.getElementById("lastname").value,
