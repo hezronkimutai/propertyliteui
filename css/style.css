@@ -10,8 +10,9 @@ body {
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: rgb(117, 113, 184);
+    background-color: #C2C6C1;
     z-index: 1;
+    max-height: 50px;
 }
 
 .header .nav ul li {
@@ -33,7 +34,7 @@ body {
     height: auto;
     min-height: 70%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -84,7 +85,16 @@ body {
     display: flex;
 }
 
-.featured .card img {
+<<<<<<< HEAD=======.featured .card img:hover {
+    /* width: 23%;
+    min-width: 360px;
+    display: inline-block;
+    margin: 1%; */
+    width: 105%;
+    margin-left: -10px;
+}
+
+>>>>>>>[starts] #167417525 Created a profile page. .featured .card img {
     width: 100%;
     position: relative;
 }
@@ -149,25 +159,24 @@ input[type=submit]:hover {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .col-25,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
 .footer {
     position: relative;
     top: 45px;
     height: auto;
     width: 100%;
     margin-bottom: 2px;
-    background-color: rgb(117, 113, 184);
+    <<<<<<< HEAD background-color: rgb(117, 113, 184);
+    =======background-color: #C2C6C1;
+    >>>>>>>[starts] #167417525 Created a profile page.
 }
 
 @media only screen and (max-width: 800px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
     .form {
         width: 95%;
     }
