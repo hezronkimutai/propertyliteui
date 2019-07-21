@@ -31,7 +31,7 @@ body {
 .container {
     position: relative;
     height: auto;
-    min-height: 90%;
+    min-height: 70%;
     width: 100%;
     margin-top: 20px;
     display: flex;
@@ -40,10 +40,6 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-<<<<<<< HEAD
-    top: 50px;
-=======
->>>>>>> [starts] #167417426 Create signin page.
 }
 
 .landing-page-img {
@@ -180,17 +176,11 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
     .col-25,
