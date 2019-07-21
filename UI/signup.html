@@ -42,30 +42,54 @@
 
 
         <div class="form">
-            <form action="/action_page.php">
                 <h2>Signup</h2>
+                <h4 id="error" class="error"></h4>
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label for="firstname">First Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        <input type="text" id="firstname" name="firstname" placeholder="Your name.." required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname">Last Name</label>
+                        <label for="lastname">Last Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Your last name.." required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname">Email</label>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="username" name="username" placeholder="Your user name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
                     </div>
                     <div class="col-75">
                         <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phonenumber">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phonenumber" name="phonenumber" placeholder="Your Phone Number..." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address" placeholder="Your address.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -77,12 +101,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <div class="col-25">
+                        <label for="confirmpassword">Confirm Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="confirmpassword" name="confirmpassword" placeholder="Your password.." required>
+                    </div>
                 </div>
-            </form>
+                <div class="row">
+                    <button type="submit" value="Submit" onclick="createUser()">Submit</button>
+                </div>
         </div>
     </div>
-    <script src="" async defer></script>
+    <script type="text/javascript" src="../js/signup.js"></script>
 </body>
 
 </html>
