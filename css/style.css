@@ -40,7 +40,10 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+<<<<<<< HEAD
     top: 50px;
+=======
+>>>>>>> [starts] #167417426 Create signin page.
 }
 
 .landing-page-img {
@@ -162,7 +165,7 @@ input[type=submit]:hover {
     width: 60%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    top: 0px;
 }
 
 .col-25 {
@@ -200,11 +203,15 @@ input[type=submit]:hover {
 
 .footer {
     position: relative;
-    top: 100px;
+    top: 45px;
     height: auto;
     width: 100%;
     background-color: red;
     margin-bottom: 2px;
 }
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    .form {
+        width: 95%;
+    }
+}
