@@ -1,0 +1,481 @@
+body {
+    background-color: #BEC3CB;
+    color: #0B2854;
+    font-size: 20px;
+    position: relative;
+    height: auto;
+}
+
+.main-container {
+    top: 60px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.header {
+    position: fixed;
+    margin: -9px 1% 0% 0%;
+    z-index: 1;
+    color: #BEC3CB;
+    height: 60px;
+    background-color: #0B2854;
+    width: 99%;
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+}
+
+.header-form {
+    position: fixed;
+    margin: -9px 1% 0% 0%;
+    z-index: 1;
+    color: #0B2854;
+    height: 60px;
+    background-color: #BEC3CB;
+    width: 99%;
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+}
+
+.header-form-left {
+    text-align: center;
+    width: 100%;
+}
+
+.header-left {
+    position: relative;
+    float: left;
+}
+
+.header-right {
+    position: relative;
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+#logout {
+    color: #BEC3CB;
+    background-color: #0B2854;
+}
+
+#logout:hover {
+    color: #4C0108;
+    background-color: #BEC3CB;
+}
+
+.border {
+    background: linear-gradient(150deg, #4C0108 27%, rgba(0, 0, 0, 0) 28%), linear-gradient(150deg, #C5E7D7 41%, #0B2854 42%);
+    background-size: 400% 400%;
+    border-radius: 5px;
+    height: auto;
+    background-position: 25% 50%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+}
+
+.inner-cutout {
+    display: block;
+    height: auto;
+}
+
+.knockout {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    color: #4C0108;
+    background: linear-gradient(150deg, #0B2854 33%, rgba(0, 0, 0, 0) 34%), linear-gradient(150deg, rgba(0, 0, 0, 0) 34%, #4C0108 33%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.knockout {
+    animation: Gradient 15s ease infinite;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 30% 50%
+    }
+    50% {
+        background-position: 25% 50%
+    }
+    100% {
+        background-position: 30% 50%
+    }
+}
+
+.header-right ul li {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #BEC3CB;
+    background-color: #0B2854;
+}
+
+.header-right ul li:hover {
+    background-color: #BEC3CB;
+    color: #4C0108
+}
+
+.featured {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container>div {
+    flex: 0 0 auto;
+    flex-shrink: 0;
+}
+
+.container-right {
+    position: relative;
+    float: right;
+    min-width: 500px;
+    width: 52%;
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+}
+
+.container-left {
+    position: relative;
+    float: left;
+    width: 45%;
+    margin-right: 1%;
+    padding: 1%;
+    min-width: 500px;
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+}
+
+.mySlides {
+    height: 300px;
+    width: 94%;
+    padding: 3%;
+}
+
+.form {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.form div {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0px;
+    color: #0B2854;
+}
+
+.form div ul {
+    color: #BEC3CB;
+    border-radius: 5px;
+    background-color: #0B2854;
+    box-shadow: 0.5px 1.5px #4C0108;
+}
+
+.form div ul li {
+    text-align: right;
+    width: 100%;
+    font-weight: 400;
+}
+
+.form div ul #sold {
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+}
+
+.form div ul li select {
+    text-align: center;
+    width: 72%;
+    margin: 10px 30px 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form div ul li input {
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+    margin: 10px 30px 10px 0px;
+    padding: 5px;
+}
+
+.form div ul li textarea {
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+    margin: 10px 30px 10px 0px;
+    padding: 5px;
+}
+
+.form div ul li button {
+    width: 72%;
+    margin: 0px 4% 1% 0px;
+    padding: 1% 0% 1% 0%;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    color: #BEC3CB;
+    background-color: #0B2854;
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #BEC3CB;
+    min-width: 160px;
+    z-index: 1;
+    left: -30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #0B2854;
+    margin: 20px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    /* background-color: #0B2854; */
+    color: #4C0108;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #4C0108;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #BEC3CB;
+    color: #4C0108;
+}
+
+.flex-container {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    height: inherit;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+}
+
+.prop:hover {
+    color: #4C0108;
+}
+
+.flex-container .pl {
+    width: 200px;
+    text-align: center;
+}
+
+.flex-container .pr {
+    width: 65%;
+    min-width: 800px;
+    text-align: center;
+}
+
+.prop {
+    box-shadow: 0.5px 1.5px #4C0108;
+    border-radius: 5px;
+    padding: 2.5px;
+    margin: 2.5px
+}
+
+.propf {
+    padding: 10px 20px;
+}
+
+.header-left h2:hover {
+    color: #4C0108;
+}
+
+.header-left h2 {
+    padding: 10px;
+    margin-top: -2px;
+}
+
+.Prof {
+    width: 100%;
+    text-align: center;
+}
+
+.userInfo ul {
+    margin-left: -50px;
+    border-radius: 10px;
+}
+
+.userInfo ul:hover {
+    /* background-color: #0B2854; */
+    color: #4C0108;
+}
+
+.prof img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.s-prop {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.s-prop img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.prop img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+    input {
+        height: 30px;
+        font-size: 30px
+    }
+    .form form ul li input[type=submit] {
+        height: 30px;
+        font-size: 20px
+    }
+    body {
+        font-size: 37px;
+    }
+    .header {
+        height: 100px;
+    }
+    .header-form {
+        height: 100px;
+        margin-top: -20px;
+    }
+    .header-left h2 {
+        font-size: 35px;
+    }
+    .header-right {
+        font-size: 25px
+    }
+    .form {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .container {
+        top: 100px;
+    }
+    .container {
+        top: 100px;
+    }
+    .container-left {
+        width: 100% !important;
+    }
+    .container-right {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-form {
+        height: 100px;
+        margin-top: -20px;
+    }
+    .form {
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+    }
+    .header-left h2 {
+        font-size: 35px;
+    }
+    .container {
+        top: 100px;
+    }
+    .header-right {
+        font-size: 25px
+    }
+    .container-left {
+        width: 100% !important;
+    }
+    .container-right {
+        width: 100%;
+    }
+    .form form {
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    .form form {
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0px;
+    }
+    .form form ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .form form ul li input {
+        width: 90%;
+        margin: 10px 1% 10px 0%;
+        padding: 5px;
+    }
+    .form form ul li select {
+        width: 90%;
+        margin: 10px 1% 10px 0%;
+        padding: 5px;
+    }
+}
