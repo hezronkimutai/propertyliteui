@@ -85,7 +85,7 @@ body {
     display: flex;
 }
 
-<<<<<<< HEAD=======.featured .card img:hover {
+.featured .card img:hover {
     /* width: 23%;
     min-width: 360px;
     display: inline-block;
@@ -94,7 +94,7 @@ body {
     margin-left: -10px;
 }
 
->>>>>>>[starts] #167417525 Created a profile page. .featured .card img {
+.featured .card img {
     width: 100%;
     position: relative;
 }
