@@ -1,12 +1,23 @@
 async function createUser(){
 let user =JSON.stringify({
-  'firstName':document.getElementById("firstName").value,
-  'secondName':document.getElementById("secondName").value,
-  'userName':document.getElementById("userName").value,
+  'firstname':document.getElementById("firstname").value,
+  'lastname':document.getElementById("lastname").value,
+  'username':document.getElementById("username").value,
   'email':document.getElementById("email").value,
-  'phoneNumber':document.getElementById("phoneNumber").value,
+  'phonenumber':document.getElementById("phonenumber").value,
+  'address':document.getElementById('address').value,
   'password':document.getElementById("password").value,
-  'confirmPassword':document.getElementById("confirmPassword").value
+  'confirmpassword':document.getElementById("confirmpassword").value
 });
-window.location.href = 'login.html'
+let options = {method: "POST", body: user, headers:{"Content-Type": "application/json"}}
+  const rawResponse = await fetch('https://propertyproliteapi.herokuapp.com/api/v2/auth/signup', options);
+  const content = await rawResponse.json();
+  console.log(content);
+  if(content.status !== 201){
+    return document.getElementById('error').innerHTML = content.Error
+  }else{
+    window.location.href = 'signin.html'
+  }
+  
+  
 }

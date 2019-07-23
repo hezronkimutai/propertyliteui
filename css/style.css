@@ -158,16 +158,16 @@ input[type=submit]:hover {
     display: table;
     clear: both;
 }
-
+.error{
+    color:red;
+}
 .footer {
     position: relative;
     top: 45px;
     height: auto;
     width: 100%;
-    margin-bottom: 2px;
-    <<<<<<< HEAD background-color: rgb(117, 113, 184);
-    =======background-color: #C2C6C1;
-    >>>>>>>[starts] #167417525 Created a profile page.
+    margin-bottom: 2px; background-color: rgb(117, 113, 184);
+    background-color: #C2C6C1;
 }
 
 @media only screen and (max-width: 800px) {
