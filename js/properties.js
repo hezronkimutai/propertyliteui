@@ -1,5 +1,4 @@
-async function getProperties(){
-
+const getProperties = async() => {
   let options = {method: "GET", headers:{"Content-Type": "application/json"}}
     const rawResponse = await fetch('https://propertyproliteapi.herokuapp.com/api/v2/property', options);
     const content = await rawResponse.json();
@@ -17,16 +16,7 @@ async function getProperties(){
                 `<p id="delete" onclick="deleteProperty(${content.data[i].id})">Delete Property</p>`+
               '</div>'
       }
-      // let userInfo =  `<li>${localStorage.getItem('username')}</li>
-      //   <li>${localStorage.getItem('firstname')} ${localStorage.getItem('secondname')}</li>
-      //   <li>${localStorage.getItem('email')}</li>
-      //   <li>${localStorage.getItem('phonenumber')}</li>`
-      //   document.getElementById("userInfo").innerHTML = userInfo;
           document.getElementById("featured").innerHTML = text;
-    
-    
-        // document.getElementById('ppicc').setAttribute("src", localStorage.getItem('ppc'))
-    
     }   
   }
   
