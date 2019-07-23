@@ -4,22 +4,28 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    background-color: rgb(219, 221, 218);
 }
 
 .header {
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: #C2C6C1;
+    background-color: rgb(219, 221, 218);
     z-index: 1;
     max-height: 50px;
 }
 
 .header .nav ul li {
     display: inline;
+    font-weight: 900;
+    margin:0 5;
 }
-
+.header .nav ul li:hover {
+    color:white;
+}
 .header .nav {
+    height: 100%;
     width: 80%;
     text-align: right
 }
@@ -30,9 +36,10 @@ body {
 }
 
 .container {
+    background-color: rgb(219, 221, 218);
     position: relative;
     height: auto;
-    min-height: 70%;
+    min-height: 100%;
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -44,6 +51,7 @@ body {
 }
 
 .landing-page-img {
+    display: flex;
     position: relative;
     background-image: url('../images/img4.jpeg');
     width: 100%;
@@ -52,18 +60,32 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+ul{
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none; 
+    padding:15 5;
+  }
+  a:hover {
+      height: 100%;
+    color: white;
+    background-color: black;
+  }
 
 .landing-page-welcome-note {
     background-color: black;
     display: flex;
+    min-height: 500px;
     align-items: center;
     justify-content: center;
+
     flex-direction: column;
     color: white;
     opacity: 0.6;
     height: 100%;
     width: 100%;
-    min-height: 500px;
 }
 
 .featured {
@@ -78,12 +100,13 @@ body {
 }
 
 .featured div {
-    width: 23%;
-    min-width: 360px;
+    width: 15%;
+    min-width: 260px;
     display: inline-block;
     margin: 1%;
     display: flex;
 }
+
 
 .featured .card img:hover {
     /* width: 23%;
@@ -94,10 +117,23 @@ body {
     margin-left: -10px;
 }
 
-.featured .card img {
+.featured .card  {
+    display: flex;
+    flex-direction: column;
+}
+.featured .card ul {
+    width:100%;
+    text-align: center;
+}
+.featured .card ul li {
+    width:100%;  
+}
+.featured .card  img{
+    display: flex;
     width: 100%;
     position: relative;
 }
+
 
 h2 {
     text-align: center;
@@ -166,8 +202,9 @@ input[type=submit]:hover {
     top: 45px;
     height: auto;
     width: 100%;
-    margin-bottom: 2px; background-color: rgb(117, 113, 184);
-    background-color: #C2C6C1;
+    margin-bottom: 2px; 
+    color: #C2C6C1;
+    background-color: black;
 }
 
 @media only screen and (max-width: 800px) {
