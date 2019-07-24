@@ -9,12 +9,17 @@ const getProperties = async() => {
       var text = "";
       var i;
       for (i = 0; i < content.data.length; i++) {
-        text += '<div class="prop">'+
-                `<img src=${content.data[i].url} />`+
-                `<p id="update" onclick="storeP(${content.data[i].id})">${content.data[i].name}</p>`+
-                `<p id="update" onclick="store(${content.data[i].id})">Update Property</p>`+
-                `<p id="delete" onclick="deleteProperty(${content.data[i].id})">Delete Property</p>`+
-              '</div>'
+        text +=  `<div class="card">
+        <div>
+            <img src='${content.data[i].imageurl}'>
+        </div>
+        <div>
+            <ul>
+                <li>sell</li>
+                <li>9500</li>
+            </ul>
+        </div>
+    </div>`
       }
           document.getElementById("featured").innerHTML = text;
     }   
