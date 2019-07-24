@@ -21,6 +21,12 @@ body {
     font-weight: 900;
     margin:0 5;
 }
+.nav-small-screen {
+    display: none;
+    font-weight: 900;
+    margin:0 5;
+    height: 0px;
+}
 .header .nav ul li:hover {
     color:white;
 }
@@ -176,7 +182,13 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     top: 0px;
 }
-
+.menu{
+    position: fixed;
+    top:5px;
+    right: 5px;
+    padding:10px;
+    display: none;
+}
 .col-25 {
     float: left;
     width: 25%;
@@ -214,7 +226,18 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
+    .menu{
+        display: block;
+    }
     .form {
         width: 95%;
     }
+     .nav-small-screen  {
+        height: auto;
+        /* display: block; */
+    }
+    .header .nav  {
+        display: none;
+    }
+  
 }
