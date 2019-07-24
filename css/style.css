@@ -184,10 +184,16 @@ input[type=submit]:hover {
 }
 .menu{
     position: fixed;
-    top:5px;
+    top:2px;
     right: 5px;
-    padding:10px;
     display: none;
+    height: 20px;
+    margin: 0px 10px;
+}
+.menu li{
+width:100%;
+height: 8px;
+font-weight: 900;
 }
 .col-25 {
     float: left;
