@@ -27,11 +27,7 @@ return response.json();
 })
 .then(function(myJson) {
 console.log(myJson);
-<<<<<<< HEAD
-// window.location.href = 'profile.html'
-=======
 window.location.href = 'profile.html'
->>>>>>> #167487812 Post property page.
 
 })
 });
