@@ -25,7 +25,7 @@ const signin = async() => {
     const rawResponse = await fetch('https://propertyproliteapi.herokuapp.com/api/v2/auth/signin', options);
     const content = await rawResponse.json();
     console.log(content);
-    if(content.status !== 201){
+    if(content.status != 201){
       return document.getElementById('error').innerHTML = content.Error
     }else{
       const jwtDecoded = parseJwt(content.token) ;
