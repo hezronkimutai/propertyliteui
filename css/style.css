@@ -29,7 +29,17 @@ a {
     text-decoration: none; 
     padding:15 5;
   }
+  .logout button {
+    color: black;
+    background-color: white;
+    padding:5 5;
+    font-weight: 900;
+  }
   a:hover {
+    color: white;
+    background-color: black;
+  }
+  .logout button:hover {
     color: white;
     background-color: black;
   }
@@ -243,18 +253,26 @@ font-weight: 900;
     position: relative;
     display: flex;
     flex-direction: column;
+    font-weight: 600;
     top: 45px;
     height: auto;
     width: 100%;
+    justify-content: center;
     margin-bottom: 2px; 
     background-color: white;
+   
 }
 .footer .footer-content {
+    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    text-align: center;
 }
 .footer .footer-content div{
-    width: 30%;
+    width: 20%;
+    
+    min-width: 180px;
     height: auto;
     padding:20px 0px 5px 0px;
 }

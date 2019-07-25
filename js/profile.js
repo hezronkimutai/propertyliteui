@@ -10,7 +10,6 @@ const getProperties = async() => {
           return item.owner == localStorage.getItem('owner');
         
       });
-      console.log("0000000000000",myProperties)
       var text = "";
       var i;
       for (i = 0; i < myProperties.length; i++) {
@@ -26,6 +25,11 @@ const getProperties = async() => {
         </div>
     </div>`
       }
+      // if(!localStorage.getItem('token')){
+      //   document.getElementById("logout").style.display = 'none'
+      // }
+          document.getElementById("featured").innerHTML = text;
+    }  
           document.getElementById("featured").innerHTML = text;
     }   
   }
