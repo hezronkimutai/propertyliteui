@@ -27,7 +27,7 @@ return response.json();
 })
 .then(function(myJson) {
 console.log(myJson);
-if(myJson.status !== 201){
+if(myJson.status != 201){
   return document.getElementById('error').innerHTML = myJson.Error
 }else{
   window.location.href = 'profile.html'
