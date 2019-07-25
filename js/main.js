@@ -13,7 +13,7 @@ const getProperties = async() => {
         <div>
             <img src='${content.data[i].imageurl}'>
         </div>
-        <div>
+        <div class="flag">
             <ul>
                 <li>sell</li>
                 <li>9500</li>
