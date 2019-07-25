@@ -24,9 +24,13 @@ const getProperties = async() => {
       if(localStorage.getItem('token')){
         document.getElementById("loggedout").style.display = 'none'
         document.getElementById("loggedoutI").style.display = 'none'
+        document.getElementById("loggedout1").style.display = 'none'
+        document.getElementById("loggedoutI1").style.display = 'none'
       }else{
         document.getElementById("loggedin").style.display = 'none'
         document.getElementById("logout").style.display = 'none'
+        document.getElementById("loggedin1").style.display = 'none'
+        document.getElementById("logout1").style.display = 'none'
       }
           document.getElementById("featured").innerHTML = text;
     }   
