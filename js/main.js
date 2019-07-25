@@ -35,5 +35,5 @@ const getProperties = async() => {
     }
     
   }
-  
+
   window.onload = getProperties;
