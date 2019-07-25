@@ -28,9 +28,12 @@ const getProperties = async() => {
    
     if(document.getElementById("nav-small-screen").style.display == 'none'){
       document.getElementById("nav-small-screen").style.display = 'block'
+      window.scrollTo(-20, -20);
     }else{
       document.getElementById("nav-small-screen").style.display = 'none'
+      window.scrollTo(-20, -20);
     }
+    
   }
   
   
