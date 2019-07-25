@@ -13,9 +13,7 @@ const parseJwt = (token) => {
 
 
     return dataJWT;
-  } catch (err) {
-    return false;
-  }
+
 }
 
 const signin = async() => {

@@ -6,12 +6,17 @@ const getProperties = async() => {
     if(content.status !== 200){
       return document.getElementById('error').innerHTML = content.Error
     }else{
+      var myProperties = content.data.filter(function(item) {
+          return item.owner == localStorage.getItem('owner');
+        
+      });
+      console.log("0000000000000",myProperties)
       var text = "";
       var i;
-      for (i = 0; i < content.data.length; i++) {
+      for (i = 0; i < myProperties.length; i++) {
         text +=  `<div class="card">
         <div>
-            <img src='${content.data[i].imageurl}'>
+            <img src='${myProperties[i].imageurl}'>
         </div>
         <div class="flag">
             <ul>
