@@ -25,14 +25,14 @@ const getProperties = async() => {
         </div>
     </div>`
       }
-      // if(!localStorage.getItem('token')){
-      //   document.getElementById("logout").style.display = 'none'
-      // }
+      if(!localStorage.getItem('token')){
+        document.getElementById("logout").style.display = 'none'
+      }
           document.getElementById("featured").innerHTML = text;
     }  
           document.getElementById("featured").innerHTML = text;
     }   
-  }
+ 
   function media(){
    
     if(document.getElementById("nav-small-screen").style.display == 'none'){
