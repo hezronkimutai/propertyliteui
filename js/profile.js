@@ -24,5 +24,14 @@ const getProperties = async() => {
           document.getElementById("featured").innerHTML = text;
     }   
   }
+  function media(){
+   
+    if(document.getElementById("nav-small-screen").style.display == 'none'){
+      document.getElementById("nav-small-screen").style.display = 'block'
+    }else{
+      document.getElementById("nav-small-screen").style.display = 'none'
+    }
+  }
+  
   
   window.onload = getProperties;
