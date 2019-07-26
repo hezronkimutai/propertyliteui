@@ -10,7 +10,7 @@ const getProperties = async() => {
       var i;
       for (i = 0; i < content.data.length; i++) {
         text +=  `<div class="card">
-        <div>
+        <div class="img">
             <img src='${content.data[i].imageurl}'>
         </div>
         <div class="flag">
