@@ -100,18 +100,20 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 100%;
+    /* border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
-    border-top-right-radius: 20%;
+    border-top-right-radius: 20%; */
+    
     flex-direction: column;
     color:#FBA20E;
     opacity: 1;
     width: 100%;
 }
 .landing-page-welcome-note img{
-    height: 80%;
-    width: 80%;
+    padding: 0px 40% 5% 0%;
+    height: 100%;
+    width: 100%;
 }
 .submit{
     width: 100%;
@@ -288,6 +290,9 @@ margin-top:-10px;
 }
 
 @media only screen and (max-width: 600px) {
+    .landing-page-welcome-note img{
+        padding: 0px 40% 20% 0%;
+    }
     .col-25,
     .col-75,
     input[type=submit] {
