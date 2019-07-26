@@ -7,16 +7,17 @@
 <!--<![endif]-->
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
 
 <body>
     <!--[if lt IE 7]>
@@ -24,19 +25,17 @@
       <![endif]-->
     <div class="header">
         <div class="logo">
-                <img class="icon" src= "https://res.cloudinary.com/hezzie/image/upload/v1564134874/thelogo_aqqc6h.png">
+            <img class="icon" src= "https://res.cloudinary.com/hezzie/image/upload/v1564134874/thelogo_aqqc6h.png">
         </div>
         <ul onclick = "media()" class="menu" id="menu">
-                <li><i class="fas fa-bars"></i></li>
+            <li><i class="fas fa-bars"></i></li>
         </ul>
         <div class="nav">
-            <ul>
-                    <li><a href="../index.html"><i class="fa fa-home"></i></a></i></li>
-                                <li><a href="#"><i class="fa fa-search"></a></i></li>
-                    <li><a href="postproperty.html">post a property</a></li>
+            <ul><li><a href="index.html"><i class="fa fa-home"></i></a></i></li>
+                <li><a href="#"><i class="fa fa-search"></a></i></li>
                 <li><a href="properties.html">properties</a></li>
+                <li id="loggedout"><a href="postproperty.html">post a property</a></li>
                 <li  id="logout" onclick="logoutUserI()"><a href="#">logout</a></li>
-                
             </ul>
         </div>
     </div>
@@ -45,37 +44,41 @@
         <div>
             <div class="nav-small-screen" id="nav-small-screen">
                     <ul>
-                            <li><a href="../index.html"><i class="fa fa-home"></i></a></i></li>
-                            <li><a href="#"><i class="fa fa-search"></a></i></li>
-                            <li><a href="postproperty.html">post a property</a></li>
-                        <li><a href="properties.html">properties</a></li>
-                        <li  id="logout" onclick="logoutUserI()"><a href="#">logout</a></li>
-                    </ul>
+                            <ul><li><a href="index.html"><i class="fa fa-home"></i></a></i></li>
+                                <li><a href="#"><i class="fa fa-search"></a></i></li>
+                        <li><a href="UI/properties.html">properties</a></li>
+                        <li id="loggedout1"><a href="UI/signup.html">signup</a></li>
+                        <li id="loggedoutI1"><a href="UI/signin.html">login</a></li>
+                        <li id="loggedin1"><a href="UI/profile.html">Profile</a></li>
+                        <li  id="logout1" onclick="logoutUserI()"><a href="#">logout</a></li></ul>
                 </div>
         <div class="landing-page-img">
+
             <div class="landing-page-welcome-note">
-                <h2>Welcome to propertyProLite</h2>
-                <h3>A place where you can buy, sell or rent properties</h3>
+                  
+                            <img class="iconi" src= "https://res.cloudinary.com/hezzie/image/upload/v1564134873/logoname_pwoann.png">
+                      
             </div>
+         
         </div>
-        <h2>My Properties</h2>
+       
+        <h2>Featured</h2>
         <div class="featured" id="featured">
-                <h4 id="error" class="error"></h4>
         </div>
         
     </div>
     </div>
     <div class="footer">
-            <div class="footer-content">
-                    <div ><a href="UI/aboutus.html">About Us</a></div>
-                    <div ><a href="UI/advertise.html">Advertise</a></div>
-                    <div ><a href="terms.html">Terms and policy</a></div>
-                    <div ><a href="privacy.html">Privacy policy</a></div>
-            </div>
-            <div class="copyright">
-                <p>@copyright 2019</p>
-            </div>
-        </div>
+    <div class="footer-content">
+            <div ><a href="aboutus.html">About Us</a></div>
+            <div ><a href="advertise.html">Advertise</a></div>
+            <div ><a href="terms.html">Terms and policy</a></div>
+            <div ><a href="privacy.html">Privacy policy</a></div>
+    </div>
+    <div class="copyright">
+        <p>@copyright 2019</p>
+    </div>
+</div>
     <script type="text/javascript" src="../js/profile.js"></script>
     <script type="text/javascript" src="../js/logout.js"></script>
 </body>
