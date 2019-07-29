@@ -13,6 +13,7 @@ const getProperties = async() => {
       var text = "";
       var i;
       for (i = 0; i < myProperties.length; i++) {
+        console.log("==========",myProperties[i].id)
         text +=  `
         <div class="card">
         
@@ -21,6 +22,7 @@ const getProperties = async() => {
         </div>
         <div class="flag">
         <button onclick="deleteP(${myProperties[i].id})">delete</button>
+        <button onclick="getProperty(${myProperties[i].id})"><a href="property.html">Property</a></button>
             <ul>
             
                 <li>sell</li>
@@ -65,6 +67,12 @@ const getProperties = async() => {
     })
     
   }
+  async function getProperty(id){
+    console.log("---------------",id)
+    localStorage.setItem('thisPid',id );
+    // window.location.href = 'property.html'
   
+    
+  }
   
   window.onload = getProperties;

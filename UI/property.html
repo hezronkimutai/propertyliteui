@@ -1,54 +1,85 @@
-<!DOCTYPE html>
-<html>
-<heead>
-  <title>PropertyProLite</title>
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <style>
-</style>
-</head>
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
 <body>
-  <div class="header">
-    <div class="header-left">
-      <h2><a href="../index.html">PropertyProLite</a></h2>
+    <!--[if lt IE 7]>
+         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <div class="header">
+        <div class="logo">
+                <img class="icon" src= "https://res.cloudinary.com/hezzie/image/upload/v1564134874/thelogo_aqqc6h.png">
+        </div>
+        <ul onclick = "media()" class="menu" id="menu">
+                <li><i class="fas fa-bars"></i></li>
+        </ul>
+        <div class="nav">
+            <ul>
+                    <li><a href="../index.html"><i class="fa fa-home"></i></a></i></li>
+                                <li><a href="#"><i class="fa fa-search"></a></i></li>
+                <li id="loggedinI"><a href="postproperty.html">post a property</a></li>
+                
+                <li id="loggedout"><a href="signup.html">signup</a></li>
+                <li id="loggedoutI"><a href="signin.html">Signin</a></li>
+                <li id="loggedin"><a href="profile.html">Profile</a></li>
+                <li  id="logout" onclick="logoutUserI()"><a href="#">logout</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="header-right">
-      <ul>
-        <li><a href="properties.html">Properties</a></li>
-      </ul>
+    <div class="container">
+            <div class="nav-small-screen" id="nav-small-screen">
+                    <ul>
+                            <li><a href="../index.html"><i class="fa fa-home"></i></a></i></li>
+                                <li><a href="#"><i class="fa fa-search"></a></i></li>
+                            <li id="loggedinI1"><a href="postproperty.html">post a property</a></li>
+                            
+                        <li id="loggedout1"><a href="signup.html">signup</a></li>
+                        <li id="loggedoutI1"><a href="signin.html">Signin</a></li>
+                        <li id="loggedin1"><a href="profile.html">Profile</a></li>
+                        <li  id="logout1" onclick="logoutUserI()"><a href="#">logout</a></li> 
+                    </ul>
+                </div>
+        <!-- <div class="landing-page-img">
+            <div class="landing-page-welcome-note">
+                <h2>Welcome to propertyProLite</h2>
+                <h3>A place where you can buy, sell or rent properties</h3>
+            </div>
+        </div> -->
+        <h2>Properties for sale.</h2>
+        <div class="featured" id="featured">
+                <h4 id="error" class="error"></h4>
+        </div>
     </div>
-  </div>
-  <div class="main-container">
-  <div class="container">
-  <div class="s-prop" id="sprop">
-    <!-- <img src="../images/img1.jpg">
-    <p>The description of theproduct</p>
-  <p><a href="update-property.html">edit</a></p>
-<p><a href="viewmap.html">View location</a></p> -->
-</div>
-  </div>
-  <div class="footer">
-    <div class="flex-container">
-
-      <div class="propf">
-      <h3>Social media</h3>
-
-        <p><a href="facebook.com">Facebook</a></p>
-        <p><a href="twitter.com">Twitter</a></p>
-
-      </div>
-      <div class="propf">
-        <h3>Contact us</h3>
-      <p><a href="mailto: hezsolutions@gmail.com">Email</a></p>
-      <p><a href="tel:0799087221">0799087221</a></p>
-      </div>
-      <div class="propf">
-        <h3>About us</h3>
-        <p><a href="terms.html">Terms and conditions</a></p>
-        <p><a href="privacy.html">Privacy and policy</a></p>
-      </div>
-      </div>
-  </div>
-</div>
+    <div class="footer">
+            <div class="footer-content">
+                    <div ><a href="UI/aboutus.html">About Us</a></div>
+                    <div ><a href="UI/advertise.html">Advertise</a></div>
+                    <div ><a href="terms.html">Terms and policy</a></div>
+                    <div ><a href="privacy.html">Privacy policy</a></div>
+            </div>
+            <div class="copyright">
+                <p>@copyright 2019</p>
+            </div>
+        </div>
+    <!-- <script type="text/javascript" src="../js/properties.js"></script> -->
+    <script type="text/javascript" src="../js/property.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
 </body>
-<script type="text/javascript" src="../js/d.js"></script>
+
 </html>
