@@ -155,7 +155,12 @@ ul{
     
 }
 
-
+.roww{
+    display: none;
+}
+.rowww{
+    display: none;
+}
 .card div:hover {
     width: 300px;
     height: 270px;
