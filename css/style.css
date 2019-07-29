@@ -70,7 +70,7 @@ a {
     height: auto;
     min-height: 90%;
     width: 100%;
-    margin-top: 50px;
+    padding-top: 60px; 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -83,7 +83,8 @@ a {
     
     display: flex;
     position: relative;
-    background-color:#FBA20E;
+    background-image:linear-gradient( to right,#FBA20E,rgb(34, 51, 36));
+    border-bottom-right-radius: 100%;
     width: 100%;
     /* height: 40%; */
     height: 350px;
@@ -97,23 +98,25 @@ ul{
 
 .landing-page-welcome-note {
     background-color: rgb(34, 51, 36);
+    padding: 0px 40px 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-right-radius: 100%;
+    border-bottom-right-radius: 110%;
     /* border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 20%; */
     
     flex-direction: column;
-    color:#FBA20E;
+    color: #6C6C6C;
     opacity: 1;
-    width: 100%;
+    width: 90%;
+    height: 100%;
 }
 .landing-page-welcome-note img{
     padding: 0px 40% 5% 0%;
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
 .submit{
     width: 100%;
@@ -136,17 +139,18 @@ ul{
 }
 
 .featured .card {
-    margin: 10px;
-    width: 340px;
-    height: 340px;
+    margin: 30px 10px;
+    width: 20%;
+    min-width: 160px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     
 }
 .card div{
-    width: 280px;
+    width: 99%;
     height: 250px;
-    margin:10px;
+    margin:1%;
 }
 .card div img {
     display: inline-block;
@@ -162,7 +166,7 @@ ul{
     display: none;
 }
 .card div:hover {
-    width: 300px;
+    width: 100%;
     height: 270px;
     margin: 0px;
 }
@@ -216,10 +220,14 @@ input[type=submit]:hover {
 }
 
 .form {
+    padding:10px;
     width: 60%;
     border-radius: 5px;
     background-color: white;
     top: 0px;
+}
+.form img{
+    max-width: 300px;
 }
 .menu{
     position: fixed;
@@ -265,7 +273,7 @@ margin-top:-10px;
     position: relative;
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight:450;
     top: 45px;
     height: auto;
     width: 100%;
@@ -293,10 +301,48 @@ margin-top:-10px;
     width:100%;
     height: 40px;
 }
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:rgb(34, 51, 36);
+}
+.reviews .review{
+    background-color: #6C6C6C;
+    margin: 10px;
+    border-radius: 10px;
+    width:340px;
+    display: flex;
+    justify-content: center;
+}
+.revprof{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.review .img{
+    width: 20%;
+}
+.review .rev{
+    width: 80%;
+    text-align: left;
+    padding:10px;
+}
 
 @media only screen and (max-width: 600px) {
+    .featured .card {
+        height: 160px;
+        
+    }
+    .card div{
+        height: 130px;
+    }
+    .landing-page-welcome-note {
+        width: 95%;
+    }
     .landing-page-welcome-note img{
-        padding: 0px 40% 20% 0%;
+        padding: 0px 20% 20% 0%;
     }
     .col-25,
     .col-75,
