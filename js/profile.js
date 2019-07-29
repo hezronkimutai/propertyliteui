@@ -13,12 +13,16 @@ const getProperties = async() => {
       var text = "";
       var i;
       for (i = 0; i < myProperties.length; i++) {
-        text +=  `<div class="card">
+        text +=  `
+        <div class="card">
+        
         <div>
             <img src='${myProperties[i].imageurl}'>
         </div>
         <div class="flag">
+        <button onclick="deleteP(${myProperties[i].id})">delete</button>
             <ul>
+            
                 <li>sell</li>
                 <li>9500</li>
             </ul>
@@ -42,6 +46,23 @@ const getProperties = async() => {
       document.getElementById("nav-small-screen").style.display = 'none'
       window.scrollTo(-20, -20);
     }
+    
+  }
+  function deleteP(id){
+   
+    let options = {method: "DELETE", headers:{"Content-Type": "application/json",'Authorization':'Bearer ' + localStorage.getItem('token')}}
+    fetch(`https://propertyproliteapi.herokuapp.com/api/v2/property/${id}`, options)
+    .then(function(response) {
+    return response.json();
+    })
+    .then(function(myJson) {
+    console.log(myJson);
+    if(myJson.status != 201){
+      return document.getElementById('error').innerHTML = myJson.Error
+    }else{
+      window.location.href = 'profile.html'
+    }
+    })
     
   }
   
